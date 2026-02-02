@@ -1,7 +1,7 @@
 import { RelevantCarousel } from "../components/RelevantCarousel"
 import { Section } from "../components/Section"
-import headerRedIcon from '@/assets/mavi/header-red-icon.svg';
-import headerBlueIcon from '@/assets/mavi/header-blue-icon.svg';
+import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
+import headerSoftBlueDiamond from '@/assets/mavi/header-soft-blue-diamond.svg';
 import benchmarkScreenshots from '@/assets/mavi/benchmark-screenshots.svg';
 import brandBenchmarkingScreenshots2 from '@/assets/mavi/brand-benchmarking-screenshots-2.svg';
 
@@ -19,7 +19,7 @@ export const BrandBenchmarking = () => {
         </div>
         <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
           <div className='flex flex-col'>
-            <img className='relative right-15' src={headerRedIcon} width={37} height={34} />
+            <img className='relative right-15' src={headerRedTriangle} width={37} height={34} />
             <div className='flex flex-col mt-3'>
               <h2 className='text-[2.5em] tracking-wider font-semibold'>
                 Benchmark Study
@@ -41,7 +41,7 @@ export const BrandBenchmarking = () => {
 
         <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-24'>
           <div className='flex flex-col'>
-            <img className='relative right-15' src={headerBlueIcon} width={37} height={34} />
+            <img className='relative right-15' src={headerSoftBlueDiamond} width={37} height={34} />
             <div className='flex flex-col mt-3'>
               <h2 className='text-[2.5em] tracking-wider font-semibold'>
                 Benchmark Function List

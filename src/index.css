@@ -50,6 +50,8 @@
   --color-link: #1A25C5;
   --color-key-insights-border: #03C3FF;
   --color-key-insights-background: #C1F1FF;
+
+  --color-vodafone-soft-blue-background: #A0E2FF;
 }
 
 :root {
@@ -148,7 +150,7 @@
   top: -0.3em;
   border-width: 2px;
   border-style: solid;
-  border-color: #ef8c22;
+  border-color: #F62F0F;
   position: absolute;
   border-right-color: transparent;
   width: calc(100% + 1.2em);
@@ -167,7 +169,7 @@
   padding: 0.8em 0.8em;
   border-width: 2px;
   border-style: solid;
-  border-color: #ef8c22;
+  border-color: #F62F0F;
   border-left-color: transparent;
   border-top-color: transparent;
   position: absolute;

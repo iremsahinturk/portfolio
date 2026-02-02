@@ -18,7 +18,7 @@ export const Section = ({
       <header className="py-14 bg-mavi text-white grid justify-center">
         <h2
           id={`${id}-title`}
-          className="text-5xl font-normal tracking-tight"
+          className="text-5xl font-normal tracking-tight text-center"
         >
           {title}
         </h2>

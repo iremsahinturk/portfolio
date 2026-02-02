@@ -1,5 +1,5 @@
 import { DraftingCompassIcon } from "lucide-react";
-import { Outlet } from "react-router";
+import { Outlet, Link } from "react-router";
 
 export default function Header() {
   return (
@@ -8,17 +8,17 @@ export default function Header() {
         <div>
           <DraftingCompassIcon className="h-15 w-15" />
         </div>
-        <div className="flex items-center gap-7 text-lg">
-          <div className="border-b-2 border-black">
-            <a href="/about">About</a>
-          </div>
-          <div className="border-b-2 border-black">
-            <a href="/work">Work</a>
-          </div>
-          <div className="border-b-2 border-black">
-            <a href="/resume">Resume</a>
-          </div>
-        </div>
+        <nav className="flex items-center gap-7 text-lg">
+          <Link className="underline underline-offset-8 decoration-2" to="/">
+            Work
+          </Link>
+          <Link className="underline underline-offset-8 decoration-2" to="/about">
+            About
+          </Link>
+          <Link className="underline underline-offset-8 decoration-2" to="/resume">
+            Resume
+          </Link>
+        </nav>
       </div>
       <Outlet />
     </div>

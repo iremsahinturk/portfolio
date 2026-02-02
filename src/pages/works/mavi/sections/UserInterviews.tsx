@@ -1,7 +1,7 @@
 import { KeyInsights } from "../components/KeyInsigths"
 import { Section } from "../components/Section"
-import headerRedIcon from '@/assets/mavi/header-red-icon.svg';
-import headerYellowIcon from '@/assets/mavi/header-yellow-icon.svg';
+import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
+import headerYellowTriangle from '@/assets/mavi/header-yellow-triangle.svg';
 import storeInterviewPlan from '@/assets/mavi/store-interview-plan.svg';
 import interviewScreenshots from '@/assets/mavi/interview-screenshots.svg';
 import person2 from '@/assets/mavi/person-2.svg';
@@ -49,7 +49,7 @@ export const UserInterviews = () => {
     <Section id="user-interviews" title="User Interviews">
         <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
           <div className='flex flex-col'>
-            <img className='relative right-15' src={headerRedIcon} width={37} height={34} alt="Interview Header Red Icon" />
+            <img className='relative right-15' src={headerRedTriangle} width={37} height={34} alt="Interview Header Red Icon" />
             <div className='flex flex-col mt-3'>
               <h2 className='text-[2.5em] tracking-wider font-semibold'>
                 Interview Goal
@@ -108,7 +108,7 @@ export const UserInterviews = () => {
         <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-24'>
           <div className='flex flex-col gap-10'>
             <div className='flex flex-col'>
-              <img className='relative right-15' src={headerYellowIcon} width={37} height={34} alt="Interview Header Yellow Icon" />
+              <img className='relative right-15' src={headerYellowTriangle} width={37} height={34} alt="Interview Header Yellow Icon" />
               <div className='flex flex-col gap-10 mt-3'>
                 <h2 className='text-[2.5em] tracking-wider font-semibold'>
                   Analyzing the interviews

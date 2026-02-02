@@ -1,6 +1,6 @@
 export const TrendAnalysisCategories = ({ categories }: { categories: any[] }) => {
   return (
-    <div className="max-w-full mx-auto mt-24 px-20">
+    <div className="max-w-full mx-auto mt-24 px-10">
       <h2 className="text-[2.5em] tracking-wider font-semibold text-center">
         Trend Analysis Categories
       </h2>
