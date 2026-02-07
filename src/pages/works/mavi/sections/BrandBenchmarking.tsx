@@ -4,6 +4,15 @@ import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
 import headerSoftBlueDiamond from '@/assets/mavi/header-soft-blue-diamond.svg';
 import benchmarkScreenshots from '@/assets/mavi/benchmark-screenshots.svg';
 import brandBenchmarkingScreenshots2 from '@/assets/mavi/brand-benchmarking-screenshots-2.svg';
+import benchmarkExample1 from '@/assets/mavi/benchmark-example-1.svg';
+import benchmarkExample2 from '@/assets/mavi/benchmark-example-2.svg';
+import benchmarkExample3 from '@/assets/mavi/benchmark-example-3.svg';
+import benchmarkExample4 from '@/assets/mavi/benchmark-example-4.svg';
+import benchmarkExample5 from '@/assets/mavi/benchmark-example-5.svg';
+import benchmarkExample6 from '@/assets/mavi/benchmark-example-6.svg';
+import benchmarkExample7 from '@/assets/mavi/benchmark-example-7.svg';
+import benchmarkExample8 from '@/assets/mavi/benchmark-example-8.svg';
+
 
 export const BrandBenchmarking = () => {
   return (
@@ -37,7 +46,7 @@ export const BrandBenchmarking = () => {
           <img src={benchmarkScreenshots} alt="Interview Screenshots" loading='lazy' className='w-full h-auto' />
         </div>
 
-        <RelevantCarousel carouselItems={[]} title="Relevant Benchmark Examples Aligned with the Insights" />
+        <RelevantCarousel carouselItems={[benchmarkExample1, benchmarkExample2, benchmarkExample3, benchmarkExample4, benchmarkExample5, benchmarkExample6, benchmarkExample7, benchmarkExample8]} title="Relevant Benchmark Examples Aligned with the Insights" />
 
         <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-24'>
           <div className='flex flex-col'>

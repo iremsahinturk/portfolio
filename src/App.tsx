@@ -1,11 +1,16 @@
-import { lazy } from 'react'
-import { Route, Routes } from 'react-router'
+import { lazy, useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router'
 import Header from './common/layout/Header'
 
 const MaviProject = lazy(() => import('@/pages/works/mavi/MaviProject.tsx'))
 const Home = lazy(() => import('@/pages/home/Home.tsx'))
 
 export default function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <Routes>

@@ -49,7 +49,7 @@ export const StoreStuffInterviews = () => {
     <Section id="store-stuff-in-depth-interviews" title="Store stuff in-depth interviews">
         <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
           <div className='flex flex-col'>
-            <img className='relative right-15 bg-blue-500 text-blue-500' src={headerRedTriangle} width={37} height={34} alt="Interview Header Red Icon" />
+            <img className='relative right-15' src={headerRedTriangle} width={37} height={34} alt="Interview Header Red Icon" />
             <div className='flex flex-col mt-3'>
               <h2 className='text-[2.5em] tracking-wider font-semibold'>
                 Interview Goal

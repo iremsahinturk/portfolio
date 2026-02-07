@@ -1,5 +1,19 @@
 import { RelevantCarousel } from "../components/RelevantCarousel"
 import { Section } from "../components/Section"
+import finalDesign1 from '@/assets/mavi/final-design-1.svg';
+import finalDesign2 from '@/assets/mavi/final-design-2.svg';
+import finalDesign3 from '@/assets/mavi/final-design-3.svg';
+import finalDesign4 from '@/assets/mavi/final-design-4.svg';
+import finalDesign5 from '@/assets/mavi/final-design-5.svg';
+import finalDesign6 from '@/assets/mavi/final-design-6.svg';
+import finalDesign7 from '@/assets/mavi/final-design-7.svg';
+import finalDesign8 from '@/assets/mavi/final-design-8.svg';
+import finalDesign9 from '@/assets/mavi/final-design-9.svg';
+import finalDesign10 from '@/assets/mavi/final-design-10.svg';
+import finalDesign11 from '@/assets/mavi/final-design-11.svg';
+import finalDesign12 from '@/assets/mavi/final-design-12.svg';
+import finalDesign13 from '@/assets/mavi/final-design-13.svg';
+
 
 const wireframeList = [
   "Homepage",
@@ -30,7 +44,9 @@ export const FinalDesign = () => {
           </ul>
         </div>
       </div>
-      <RelevantCarousel carouselItems={[]} title="Home Page" />
+      <RelevantCarousel carouselItems={[
+        finalDesign1, finalDesign2, finalDesign3, finalDesign4, finalDesign5, finalDesign6, finalDesign7, finalDesign8, finalDesign9, finalDesign10, finalDesign11, finalDesign12, finalDesign13
+      ]} />
     </Section>
   )
 }

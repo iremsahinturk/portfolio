@@ -5,7 +5,7 @@ import maviLogo from '@/assets/mavi/mavi-logo.svg';
 export const Introduction = () => {
 
   return (
-    <>
+    <section>
       <div className="bg-mavi mb-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-6 py-10 lg:py-16 grid lg:grid-cols-2 gap-20 items-center">
           <div className='relative'>
@@ -123,6 +123,6 @@ export const Introduction = () => {
 
         </div>
       </div>
-    </>
+    </section>
   )
 }

@@ -2,6 +2,9 @@ import { RelevantCarousel } from "../components/RelevantCarousel";
 import { Section } from "../components/Section"
 import { TrendAnalysisCategories } from "../components/TrendAnalysisCategories"
 import trendsScreenshots from '@/assets/mavi/trends-screenshots.svg';
+import trendExample1 from '@/assets/mavi/trend-example-1.svg';
+import trendExample2 from '@/assets/mavi/trend-example-2.svg';
+import trendExample3 from '@/assets/mavi/trend-example-3.svg';
 
 const trendAnalysisCategories = [
   {
@@ -112,7 +115,7 @@ export const Trends = () => {
       <div className='w-full mt-16'>
         <img src={trendsScreenshots} alt="Trends Screenshots" loading='lazy' className='w-full h-auto' />
       </div>
-      <RelevantCarousel carouselItems={[]} title="Relevant Trend Examples Aligned with the Insights" />
+      <RelevantCarousel carouselItems={[trendExample1, trendExample2, trendExample3]} title="Relevant Trend Examples Aligned with the Insights" />
     </Section>
   )
 }
