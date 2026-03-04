@@ -1,5 +1,5 @@
 import { RelevantCarousel } from "../components/RelevantCarousel"
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import finalDesign1 from '@/assets/mavi/final-design-1.svg';
 import finalDesign2 from '@/assets/mavi/final-design-2.svg';
 import finalDesign3 from '@/assets/mavi/final-design-3.svg';

@@ -1,5 +1,5 @@
 import { RelevantCarousel } from "../components/RelevantCarousel"
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
 import headerSoftBlueDiamond from '@/assets/mavi/header-soft-blue-diamond.svg';
 import benchmarkScreenshots from '@/assets/mavi/benchmark-screenshots.svg';

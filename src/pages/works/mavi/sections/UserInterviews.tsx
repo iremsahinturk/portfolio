@@ -1,5 +1,5 @@
 import { KeyInsights } from "../components/KeyInsigths"
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
 import headerYellowTriangle from '@/assets/mavi/header-yellow-triangle.svg';
 import storeInterviewPlan from '@/assets/mavi/store-interview-plan.svg';

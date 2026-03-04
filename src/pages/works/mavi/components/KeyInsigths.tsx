@@ -38,12 +38,12 @@ import keyInsightsChatIcon from '@/assets/mavi/key-insights-chat-icon.svg';
 export const KeyInsights = ({ insights, personImg, bubbleText }: { insights: any[]; personImg: string; bubbleText: string }) => {
 
   return (
-    <div className="max-w-full mx-auto mt-24 px-10">
+    <div className="max-w-full mx-auto mt-24 px-8">
       <h2 className="text-[2.5em] tracking-wider font-semibold text-center">
         Key Insights
       </h2>
 
-      <div className="flex flex-wrap items-stretch justify-center gap-5 mt-16">
+      <div className="grid grid-cols-4 justify-center gap-4 mt-16">
         <div className='w-[357px] pt-4'>
           <KeyInsightBubble
             text={bubbleText}

@@ -1,5 +1,5 @@
 import { ResearchCards } from "../components/ResearchCards"
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import maviReserch1 from '@/assets/mavi/research_1.svg';
 import maviReserch2 from '@/assets/mavi/research_2.svg';
 import maviReserch3 from '@/assets/mavi/research_3.svg';

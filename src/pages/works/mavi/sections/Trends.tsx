@@ -1,5 +1,5 @@
 import { RelevantCarousel } from "../components/RelevantCarousel";
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import { TrendAnalysisCategories } from "../components/TrendAnalysisCategories"
 import trendsScreenshots from '@/assets/mavi/trends-screenshots.svg';
 import trendExample1 from '@/assets/mavi/trend-example-1.svg';

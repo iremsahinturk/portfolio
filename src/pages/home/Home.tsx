@@ -1,10 +1,10 @@
-import { Vodafone } from "./components/Vodafone";
-import { Mavi } from "./components/Mavi";
-import { Hero } from "./components/Hero";
+import { Vodafone } from "./sections/Vodafone";
+import { Mavi } from "./sections/Mavi";
+import { Hero } from "./sections/Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-neutral-900">
+    <div className="min-h-screen">
       <Hero />
       <Vodafone />
       <Mavi />

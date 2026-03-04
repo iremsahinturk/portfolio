@@ -1,4 +1,4 @@
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import wireframeScreenshots from '@/assets/mavi/wireframe-screenshots.svg';
 
 const wireframeList = [

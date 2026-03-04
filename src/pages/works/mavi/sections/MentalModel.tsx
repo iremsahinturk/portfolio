@@ -1,4 +1,4 @@
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import mentalModelScreenshot from '@/assets/mavi/mental-model-screenshot.svg';
 
 export const MentalModel = () => {

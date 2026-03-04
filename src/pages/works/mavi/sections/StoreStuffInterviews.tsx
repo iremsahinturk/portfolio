@@ -1,4 +1,4 @@
-import { Section } from "../components/Section"
+import { Section } from "@/common/components/Section"
 import userInterviewsScreenshots from '@/assets/mavi/user-interviews-screenshots.svg';
 import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
 import storeInterviewPlan from '@/assets/mavi/store-interview-plan.svg';
