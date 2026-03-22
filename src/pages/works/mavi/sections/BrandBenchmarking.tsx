@@ -1,9 +1,7 @@
 import { RelevantCarousel } from "../components/RelevantCarousel"
 import { Section } from "@/common/components/Section"
-import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
-import headerSoftBlueDiamond from '@/assets/mavi/header-soft-blue-diamond.svg';
-import benchmarkScreenshots from '@/assets/mavi/benchmark-screenshots.svg';
-import brandBenchmarkingScreenshots2 from '@/assets/mavi/brand-benchmarking-screenshots-2.svg';
+import benchmarkMiro from '@/assets/mavi/brand-benchmarking-miro.svg';
+import benchmarkExcel from '@/assets/mavi/brand-benchmarking-excel.svg';
 import benchmarkExample1 from '@/assets/mavi/benchmark-example-1.svg';
 import benchmarkExample2 from '@/assets/mavi/benchmark-example-2.svg';
 import benchmarkExample3 from '@/assets/mavi/benchmark-example-3.svg';
@@ -16,56 +14,38 @@ import benchmarkExample8 from '@/assets/mavi/benchmark-example-8.svg';
 
 export const BrandBenchmarking = () => {
   return (
-    <Section id="brand-benchmarking" title="Brand Benchmarking">
-        <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
-          <p className='text-xl leading-9 tracking-wide'>
-            We analyzed the functions, concepts, and trends of approximately&nbsp;
-            <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'>162 brands,</span>
-            &nbsp;including&nbsp;
-            <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'>both industry and non-industry</span>
-            &nbsp;brands offering similar experiences. For each benchmark, we compiled a list of critical functions and generated solution ideas based on customer needs and a user-centered perspective.
+    <Section id="brand-benchmarking" title="Brand Benchmarking" backgroundColor="theme-yellow" titleColor="black">
+      <div className="flex flex-col mx-auto max-w-3xl px-4 md:px-0 mt-16 gap-12">
+        <p className='text-sm leading-7 tracking-wide'>
+          In our benchmark study, we captured screenshots of around&nbsp;
+          <span className='font-semibold'>162 different brands’</span>
+          &nbsp;homepages, menus, product listing pages, collection detail pages, product detail pages, checkout flows, and account creation flows
+          &nbsp;— both on mobile and desktop.
+        </p>
+        <div>
+          <img src={benchmarkMiro} alt="Brand Benchmarking Miro" loading='lazy' className='w-full h-auto' />
+          <p className="text-xs italic mt-2 font-light tracking-wide leading-7">We organized all of them in a Miro board.</p>
+        </div>
+        <div>
+          <img src={benchmarkExcel} alt="Brand Benchmarking Excel" loading='lazy' className='w-full h-auto' />
+          <p className="text-xs italic mt-2 font-light tracking-wide leading-7">
+            Using Excel, we listed and analyzed key features across categories like homepage, product listing, filtering, and checkout.
           </p>
         </div>
-        <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
-          <div className='flex flex-col'>
-            <img className='relative right-15' src={headerRedTriangle} width={37} height={34} />
-            <div className='flex flex-col mt-3'>
-              <h2 className='text-[2.5em] tracking-wider font-semibold'>
-                Benchmark Study
-              </h2>
-              <p className='mt-12 text-xl leading-9 tracking-wide'>
-                In our benchmark study, we captured screenshots of around&nbsp;
-                <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'>162 different brands’</span>
-                &nbsp;<span className='font-semibold'> homepages, menus, product listing pages, collection detail pages, product detail pages, checkout flows, and account creation flows</span>
-                &nbsp;— both on mobile and desktop. We organized all of them in a Miro board. We added post-it notes on designs that stood out to us or supported the insights gathered from users and store staffs.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className='w-full mt-16'>
-          <img src={benchmarkScreenshots} alt="Interview Screenshots" loading='lazy' className='w-full h-auto' />
-        </div>
+      </div>
 
-        <RelevantCarousel carouselItems={[benchmarkExample1, benchmarkExample2, benchmarkExample3, benchmarkExample4, benchmarkExample5, benchmarkExample6, benchmarkExample7, benchmarkExample8]} title="Relevant Benchmark Examples Aligned with the Insights" />
-
-        <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-24'>
-          <div className='flex flex-col'>
-            <img className='relative right-15' src={headerSoftBlueDiamond} width={37} height={34} />
-            <div className='flex flex-col mt-3'>
-              <h2 className='text-[2.5em] tracking-wider font-semibold'>
-                Benchmark Function List
-              </h2>
-              <p className='mt-12 text-xl leading-9 tracking-wide'>
-                Using Excel, we listed and&nbsp;
-                <span className='font-semibold'> analyzed key features </span>
-                across categories like homepage, product listing, filtering, and checkout for each benchmarked platform.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className='w-full mt-16'>
-          <img src={brandBenchmarkingScreenshots2} alt="Benchmark Screenshots" loading='lazy' className='w-full h-auto' />
-        </div>
-      </Section>
+      <RelevantCarousel 
+        carouselItems={[
+          benchmarkExample1, 
+          benchmarkExample2, 
+          benchmarkExample3, 
+          benchmarkExample4, 
+          benchmarkExample5, 
+          benchmarkExample6, 
+          benchmarkExample7, 
+          benchmarkExample8
+        ]} 
+        title="Relevant Benchmark Examples Aligned with the Insights" />
+    </Section>
   )
 }

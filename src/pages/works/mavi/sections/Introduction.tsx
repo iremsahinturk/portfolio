@@ -1,4 +1,3 @@
-import { Button } from "@/common/shadcn/components/button"
 import maviWebHomepage from '@/assets/mavi/mavi-homepage.svg';
 import maviLogo from '@/assets/mavi/mavi-logo.svg';
 
@@ -6,55 +5,48 @@ export const Introduction = () => {
 
   return (
     <section>
-      <div className="bg-mavi mb-16">
-        <div className="mx-auto max-w-7xl px-4 lg:px-6 py-10 lg:py-16 grid lg:grid-cols-2 gap-20 items-center">
+      <div className="bg-theme-yellow mb-16 ">
+        <div className="mx-auto max-w-7xl px-4 lg:px-6 py-10 lg:py-16 grid lg:grid-cols-2 gap-15 items-center">
           <div className='relative'>
             <div className='grid place-items-center'>
               <img src={maviWebHomepage} alt="Mavi Web Homepage" loading='lazy' />
             </div>
           </div>
-          <div className='text-white flex flex-col gap-12'>
+          <div className='flex flex-col gap-9'>
             <div>
               <img src={maviLogo} alt="Mavi Logo" loading='lazy' />
             </div>
             <div>
-              <h2 className="text-white text-2xl font-normal">
+              <h2 className="text-xl font-normal">
                 The website is an online platform where users can browse and purchase clothing and accessories.
               </h2>
             </div>
-            <div className='flex flex-col justify-between h-[240px]'>
+            <div className='flex flex-col gap-4 text-sm'>
               <p>
                 <span className='font-bold'>Project type: </span>
-                <span>End-to-End Redesign of the E-Commerce Experience</span>
+                <span>End-to-End Redesign</span>
               </p>
               <p>
                 <span className='font-bold'>Role: </span>
                 <span>
                   UX researcher + UX/UI designer
-                  <span className='italic text-mavi-yellow'>
-                    (with support from my team at Userspots agency, Avengers, and design critique, Tuğba Işık)
+                  <span className='italic'>
+                    &nbsp;(with support from my team at Userspots agency)
                   </span>
                 </span>
               </p>
               <p>
                 <span className='font-bold'>Industry: </span>
-                <span>Fashion, E-commerce</span>
+                <span>E-commerce</span>
               </p>
               <p>
                 <span className='font-bold'>Tools: </span>
-                <span>Figma, Sketch, Miro</span>
+                <span>Figma, Excel, Miro</span>
               </p>
               <p>
                 <span className='font-bold'>Duration: </span>
-                <span>Q4 2020-Q1 2021</span>
+                <span>Q3 2020-Q4 2020</span>
               </p>
-            </div>
-            <div>
-              <Button
-                className='bg-white text-mavi hover:bg-white/80 h-[64px] w-[367px] rounded-[40px] text-base'
-                size="lg"
-              >View Prototype
-              </Button>
             </div>
           </div>
         </div>
@@ -67,8 +59,8 @@ export const Introduction = () => {
                 PROJECT OVERVIEW
               </h2>
             </div>
-            <div className='mt-15 pl-3'>
-              <ul className='list-disc list-inside text-link underline underline-offset-4'>
+            <div className='mt-12 pl-3 text-sm'>
+              <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
                   <a href="#about">About Mavi & Project scope's</a>
                 </li>
@@ -82,22 +74,22 @@ export const Introduction = () => {
                 RESEARCH
               </h2>
             </div>
-            <div className='mt-15 pl-3'>
-              <ul className='list-disc list-inside gap-4 text-link underline underline-offset-4'>
+            <div className='mt-12 pl-3 text-sm'>
+              <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
                   <a href="#store-stuff-in-depth-interviews">Store stuff In-depth interviews (4)</a>
                 </li>
-                <li className='mt-3'>
+                <li>
                   <a href="#user-interviews">User interviews (6)</a>
                 </li>
-                <li className='mt-3'>
+                <li>
                   <a href="#brand-benchmarking">Brand benchmarking (162)</a>
                 </li>
-                <li className='mt-3'>
-                  <a href="#trends">Trends study</a>
-                </li>
-                <li className='mt-3'>
+                <li>
                   <a href="#mental-model">Mental model</a>
+                </li>
+                <li>
+                  <a href="#trends">Trends study</a>
                 </li>
               </ul>
             </div>
@@ -109,14 +101,18 @@ export const Introduction = () => {
                 DESIGN
               </h2>
             </div>
-            <div className='mt-15 pl-3'>
-              <ul className='list-disc list-inside gap-4 text-link underline underline-offset-4'>
+            <div className='mt-12 pl-3 text-sm'>
+              <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
                   <a href="#wireframes">High-fidelity wireframes</a>
                 </li>
-                <li className='mt-3'>
+                <li>
                   <a href="#final-design">Final design</a>
                 </li>
+                <li>
+                  <a href="#key-learnings">Key learnings</a>
+                </li>
+
               </ul>
             </div>
           </div>

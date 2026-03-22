@@ -50,18 +50,18 @@ export const RelevantCarousel = ({ carouselItems, title }: { carouselItems: any[
   return (
     <div className="max-w-full mx-auto mt-24 px-10">
       { title && (
-        <h2 className="text-[2.5em] tracking-wider font-semibold text-center">
+        <h2 className="text-2xl tracking-wider font-semibold text-center">
           {title}
         </h2>
       )}
-      <div className='flex flex-col items-center mt-16 gap-6'>
+      <div className='flex flex-col items-center mt-8 gap-6'>
         {/* Main Carousel */}
         <Carousel
           setApi={setMainApi}
           opts={{
             loop: true,
           }}
-          className="w-full max-w-6xl">
+          className="w-full max-w-7xl">
           <CarouselContent>
             {carouselItems.map((item, index) => (
               <CarouselItem key={index}>
@@ -81,7 +81,7 @@ export const RelevantCarousel = ({ carouselItems, title }: { carouselItems: any[
         {/* <div> */}
         <Carousel
           setApi={setThumbApi}
-          className="w-full max-w-6xl"
+          className="w-full max-w-7xl"
           opts={{
             // dragFree: true,
             containScroll: "keepSnaps",

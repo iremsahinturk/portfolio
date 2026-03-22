@@ -1,7 +1,7 @@
 export const TrendAnalysisCategories = ({ categories }: { categories: any[] }) => {
   return (
     <div className="max-w-full mx-auto mt-24 px-10">
-      <h2 className="text-[2.5em] tracking-wider font-semibold text-center">
+      <h2 className="text-2xl tracking-wider font-semibold text-center">
         Trend Analysis Categories
       </h2>
       <div className="flex flex-wrap items-stretch justify-center gap-x-5 gap-y-9 mt-16">

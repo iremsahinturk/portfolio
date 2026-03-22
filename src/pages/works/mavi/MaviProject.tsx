@@ -8,19 +8,21 @@ import { Trends } from './sections/Trends';
 import { MentalModel } from './sections/MentalModel';
 import { Wireframes } from './sections/Wireframes';
 import { FinalDesign } from './sections/FinalDesign';
+import { KeyLearnings } from './sections/KeyLearnings';
 
 export default function MaviProject() {
   return (
-    <div className="font-light scroll-smooth tracking-wider">
+    <div className="font-light scroll-smooth relative">
       <Introduction />
       <ProjectOverview />
       <StoreStuffInterviews />
       <UserInterviews />
       <BrandBenchmarking />
-      <Trends />
       <MentalModel />
+      <Trends />
       <Wireframes />
       <FinalDesign />
+      <KeyLearnings />
     </div>
   )
 }

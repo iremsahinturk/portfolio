@@ -44,6 +44,10 @@
 }
 
 @theme {
+  --color-theme-yellow: #FFE497;
+  --color-theme-blue: #7197D3;
+  --color-theme-red: #FFBA9C;
+  --color-theme-green: #DFDFCE;
   --color-mavi: #1A25C5;
   --color-mavi-yellow: #FFCA39;
   --color-mavi-yellow-background: #FFEFC2;

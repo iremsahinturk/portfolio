@@ -1,5 +1,4 @@
 import talkBubble from '@/assets/mavi/talk-bubble.svg';
-import keyInsightsChatIcon from '@/assets/mavi/key-insights-chat-icon.svg';
 
 // const KeyInsightCard = ({ title, upperText, lowerText, upperHeight, lowerHeight }: { title: string; upperText: string; lowerText: string; upperHeight: number; lowerHeight: number }) => {
 //   const totalHeightStr = `${upperHeight + lowerHeight}px`;
@@ -38,13 +37,13 @@ import keyInsightsChatIcon from '@/assets/mavi/key-insights-chat-icon.svg';
 export const KeyInsights = ({ insights, personImg, bubbleText }: { insights: any[]; personImg: string; bubbleText: string }) => {
 
   return (
-    <div className="max-w-full mx-auto mt-24 px-8">
-      <h2 className="text-[2.5em] tracking-wider font-semibold text-center">
+    <div className="max-w-7xl mx-auto mt-24 px-8">
+      <h2 className="text-2xl tracking-wider font-semibold text-center">
         Key Insights
       </h2>
 
-      <div className="grid grid-cols-4 justify-center gap-4 mt-16">
-        <div className='w-[357px] pt-4'>
+      <div className="flex flex-wrap justify-center gap-6 mt-16">
+        <div className='w-[282px] h-[413px]'>
           <KeyInsightBubble
             text={bubbleText}
             img={personImg}
@@ -53,25 +52,24 @@ export const KeyInsights = ({ insights, personImg, bubbleText }: { insights: any
         {insights.map((insight, i) => (
           <div
             key={i}
-            className="flex flex-col border-key-insights-border border-3 border-solid rounded-lg w-[357px]"
+            className="border-key-insights-border border-3 border-solid rounded-lg w-[282px] h-[413px]"
           >
             {/* Top Section */}
-            <div className="flex flex-col text-xl p-8 h-[400px]">
-              <div className="flex items-center justify-center">
-                <img src={keyInsightsChatIcon} alt="Key Insights Chat Icon" loading='lazy' />
-              </div>
-              <h3 className='font-semibold uppercase tracking-wide mt-6'>{insight.title}</h3>
-              <p className="italic mt-4 leading-8">
-                <span className='font-bold text-3xl leading-0'>‘</span>
-                {insight.quote}
-                <span className='font-bold text-3xl leading-0'>’</span>
-              </p>
+            <div className="text-sm p-6 h-[225px]">
+              {/* <div className='h-full'> */}
+                <h3 className='font-semibold uppercase'>{insight.title}</h3>
+                <p className="italic mt-4 leading-7">
+                  <span className='font-bold text-2xl leading-0'>‘</span>
+                  {insight.quote}
+                  <span className='font-bold text-2xl leading-0'>’</span>
+                </p>
+              {/* </div> */}
             </div>
 
-            <div className={`flex flex-col flex-1 text-xl leading-8 border-t-3 border-key-insights-border bg-key-insights-background rounded-lg p-8`}>
-              <div className='flex flex-1 h-full items-center'>
+            <div className={`flex flex-col flex-1 text-sm leading-7 border-t-3 border-key-insights-border bg-key-insights-background rounded-lg p-6 h-[188px]`}>
+              {/* <div className='items-center h-full'> */}
                 <p>{insight.bottom}</p>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         ))}
@@ -82,24 +80,24 @@ export const KeyInsights = ({ insights, personImg, bubbleText }: { insights: any
 
 const KeyInsightBubble = ({ text, img }: { text: string; img: string }) => {
   return (
-    <>
+    <div className='flex flex-col'>
       <TalkBubbleIcon text={text} />
-      <img src={img} alt="Person 1" loading='lazy' className='relative right-8' />
-    </>
+      <img src={img} alt="Person 1" loading='lazy' className='relative right-4 h-auto w-[160px]' />
+    </div>
   )
 }
 
 function TalkBubbleIcon({ text }: { text?: string }) {
   return (
-    <div className="relative">
+    <div className="relative w-[282px] h-[222px]">
       {/* SVG bubble */}
-      <img src={talkBubble} alt="Talk Bubble" loading='lazy' className="w-full h-full" />
+      <img src={talkBubble} alt="Talk Bubble" loading='lazy' className="" />
       {/* Text inside bubble */}
-      <div className="absolute inset-8 bottom-12 flex items-center justify-center text-xl italic leading-8">
+      <div className="absolute inset-8 bottom-12 flex items-center justify-center text-sm italic leading-7">
         <div>
-          <span className='font-bold text-3xl leading-0'>‘</span>
+          <span className='font-bold text-2xl leading-0'>‘</span>
           {text}
-          <span className='font-bold text-3xl leading-0'>’</span>
+          <span className='font-bold text-2xl leading-0'>’</span>
         </div>
       </div>
     </div>

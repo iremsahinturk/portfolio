@@ -1,7 +1,7 @@
 import { RelevantCarousel } from "../components/RelevantCarousel";
 import { Section } from "@/common/components/Section"
 import { TrendAnalysisCategories } from "../components/TrendAnalysisCategories"
-import trendsScreenshots from '@/assets/mavi/trends-screenshots.svg';
+import trendCategories from '@/assets/mavi/trend-categories.svg';
 import trendExample1 from '@/assets/mavi/trend-example-1.svg';
 import trendExample2 from '@/assets/mavi/trend-example-2.svg';
 import trendExample3 from '@/assets/mavi/trend-example-3.svg';
@@ -98,23 +98,25 @@ const trendAnalysisCategories = [
 
 export const Trends = () => {
   return (
-    <Section id="trends" title="Trends">
-      <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
-        <p className='text-xl leading-9 tracking-wide'>
+    <Section id="trends" title="Trends" backgroundColor="theme-yellow" titleColor="black">
+      <div className="flex flex-col mx-auto max-w-3xl px-4 md:px-0 mt-16">
+        <p className='text-sm leading-7 tracking-wide'>
           The trends study explored&nbsp;
           <span className='font-semibold'>how customer expectations are evolving in today’s context</span>
           &nbsp;— including the impact of the&nbsp;
-          <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'>COVID-19</span>
-          &nbsp;pandemic and growing interest in more conscious, connected, and&nbsp;
-          <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'>personalized experiences.</span>
-          &nbsp;Our goal was to identify patterns and insights that reflect these shifting user needs and can inspire future design directions. We grouped the trend examples we found into&nbsp;
-          <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'>9 categories.</span>
+          <span className='font-semibold'>COVID-19</span>
+          &nbsp;pandemic and growing interest in more conscious, connected, and personalized experiences. Our goal was to identify patterns and insights that reflect these shifting user needs and can inspire future design directions.
         </p>
       </div>
-      <TrendAnalysisCategories categories={trendAnalysisCategories} />
-      <div className='w-full mt-16'>
-        <img src={trendsScreenshots} alt="Trends Screenshots" loading='lazy' className='w-full h-auto' />
+      <div className="flex flex-col mx-auto max-w-6xl px-4 md:px-0 mt-16 gap-12">
+        <div>
+          <img src={trendCategories} alt="Trend Categories" loading='lazy' className='w-full h-auto' />
+          <p className="text-xs italic mt-2 font-light tracking-wide leading-7">
+            We grouped the trend examples we found into 9 categories.
+          </p>
+        </div>
       </div>
+      <TrendAnalysisCategories categories={trendAnalysisCategories} />
       <RelevantCarousel carouselItems={[trendExample1, trendExample2, trendExample3]} title="Relevant Trend Examples Aligned with the Insights" />
     </Section>
   )

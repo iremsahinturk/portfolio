@@ -1,8 +1,5 @@
 import { Section } from "@/common/components/Section"
-import userInterviewsScreenshots from '@/assets/mavi/user-interviews-screenshots.svg';
-import headerRedTriangle from '@/assets/mavi/header-red-triangle.svg';
 import storeInterviewPlan from '@/assets/mavi/store-interview-plan.svg';
-import headerYellowTriangle from '@/assets/mavi/header-yellow-triangle.svg';
 import { KeyInsights } from "../components/KeyInsigths";
 import person1 from '@/assets/mavi/person-1.svg';
 
@@ -46,48 +43,38 @@ const storeStuffInterviewInsights = [
 
 export const StoreStuffInterviews = () => {
   return (
-    <Section id="store-stuff-in-depth-interviews" title="Store stuff in-depth interviews">
-        <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
-          <div className='flex flex-col'>
-            <img className='relative right-15' src={headerRedTriangle} width={37} height={34} alt="Interview Header Red Icon" />
-            <div className='flex flex-col mt-3'>
-              <h2 className='text-[2.5em] tracking-wider font-semibold'>
-                Interview Goal
-              </h2>
-              <p className='mt-12 text-xl leading-9 tracking-wide'>
-                Before conducting user interviews, one-on-one sessions were held with&nbsp;
-                <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'>4 store staffs</span>
-                &nbsp;to gain preliminary insights about customers. These interviews&nbsp;
-                <span className='font-semibold'>focused on listening to real stories and understanding user complaints, needs, and gaps in knowledge.</span>
-                &nbsp;It were also conducted with Mavi store stuffs to explore&nbsp;
-                <span className='font-semibold'>their expectations from the website.</span>
-                &nbsp;Insights gathered from these sessions informed the user interviews, and all findings were later analyzed using a mental model framework.
-              </p>
-            </div>
-          </div>
+    <Section id="store-stuff-in-depth-interviews" title="Store stuff in-depth interviews" backgroundColor="theme-yellow" titleColor="black">
+        <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16'>
+          <p className='text-sm leading-7 tracking-wide'>
+            Before conducting user interviews, one-on-one sessions were held with&nbsp;
+            <span className='font-semibold'>4 store staffs</span>
+            &nbsp;to gain preliminary insights about customers. These interviews&nbsp;
+            <span className='font-semibold'>focused on listening to real stories</span>
+            &nbsp;and understanding user complaints, needs, and gaps in knowledge.
+          </p>
         </div>
 
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 justify-center content-center mx-auto max-w-6xl px-4 lg:px-6 mt-16 gap-7'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 justify-center content-center mx-auto max-w-3xl mt-10 gap-7'>
           <div className='col-span-2 grid content-center'>
-            <div className='flex flex-col gap-8'>
-              <h5 className='text-2xl font-semibold '>
+            <div className='flex flex-col gap-3'>
+              <h5 className='font-semibold '>
                 Research objectives
               </h5>
-              <div className='pl-10 text-xl tracking-tight leading-9'>
-                <ul className='list-disc list-outside gap-4'>
+              <div className='pl-5 text-sm tracking-tight leading-7'>
+                <ul className='list-disc list-outside space-y-3'>
                   <li>
                     <span>What are the main reasons <span className='font-semibold'>customers seek help</span> from store staff?</span>
                   </li>
-                  <li className='mt-3'>
+                  <li>
                     <span>In which areas do customers most frequently <span className='font-semibold'>request assistance?</span></span>
                   </li>
-                  <li className='mt-3'>
+                  <li>
                     <span>Are customers able to easily understand the <span className='font-semibold'>differences between products?</span> (Especially various jean fits and styles)</span>
                   </li>
-                  <li className='mt-3'>
+                  <li>
                     <span>What <span className='font-semibold'>challenges</span> do sales associates face when assisting customers?</span>
                   </li>
-                  <li className='mt-3'>
+                  <li>
                     <span>How have customers’ shopping habits changed <span className='font-semibold'>during the pandemic?</span></span>
                   </li>
                 </ul>
@@ -97,27 +84,6 @@ export const StoreStuffInterviews = () => {
           <div>
             <img src={storeInterviewPlan} alt="Interview Plan" loading='lazy' />
           </div>
-        </div>
-
-        <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-24'>
-          <div className='flex flex-col gap-10'>
-            <div className='flex flex-col'>
-              <img className='relative right-15' src={headerYellowTriangle} width={37} height={34} alt="Interview Header Yellow Icon" />
-              <div className='flex flex-col gap-10 mt-3'>
-                <h2 className='text-[2.5em] tracking-wider font-semibold'>
-                  Analyzing the interviews
-                </h2>
-                <p className='text-xl leading-9 tracking-wide'>
-                  After completing the interviews, we&nbsp;
-                  <span className='font-semibold'>transcribed each one</span>
-                  &nbsp;individually and summarized the findings. Each entry was analyzed in Excel along with its category and, if available, any notes from the interviewer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='w-full mt-16'>
-          <img src={userInterviewsScreenshots} alt="Interview Screenshots" loading='lazy' className='w-full h-auto' />
         </div>
 
         <KeyInsights

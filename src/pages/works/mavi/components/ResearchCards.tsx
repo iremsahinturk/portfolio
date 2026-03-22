@@ -1,6 +1,6 @@
 export const ResearchCards = ({ researchCards }: { researchCards: any[] }) => {
   return (
-    <div className='mx-auto max-w-7xl grid lg:grid-cols-4 md:grid-cols-2 px-4 mt-16 lg:px-6 gap-5'>
+    <div className='mx-auto max-w-7xl grid lg:grid-cols-4 md:grid-cols-2 px-4 mt-16 lg:px-6 gap-6'>
       {researchCards.map((card, index) => (
         <ResearchCard
           key={index}
@@ -23,14 +23,14 @@ export const ResearchCard = ({ img, imgAlt, count, description }: {
 }) => {
   return (
     <div className='border-mavi-yellow border-3 border-solid rounded-lg'>
-      <div className="flex flex-col h-full">
+      <div className="flex flex-col h-full w-[282px]">
         <div className='h-1/2 flex items-center justify-center p-12'>
-          <img src={img} alt={imgAlt} loading='lazy' />
+          <img src={img} alt={imgAlt} loading='lazy' className="h-16 w-16" />
         </div>
         <div className='h-1/2 border-t-3 border-mavi-yellow flex items-center justify-center'>
           <div className='w-full h-full bg-mavi-yellow-background flex flex-col items-center px-6 py-8 gap-4'>
-            <h3 className="font-medium text-4xl">{count}</h3>
-            <p className="font-extralight text-xl text-center">{description}</p>
+            <h3 className="font-medium text-2xl">{count}</h3>
+            <p className="font-extralight text-sm text-center">{description}</p>
           </div>
         </div>
       </div>

@@ -35,38 +35,34 @@ const researchCards = [
 export const ProjectOverview = () => {
 
   return (
-    <Section id="about" title="About Mavi & Project Scope">
-      <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16 text-xl leading-9'>
+    <Section id="about" title="About Mavi & Project Scope" backgroundColor="theme-yellow" titleColor="black">
+      <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
         <p>
           <span className='font-extrabold'>About Mavi: </span>
-          Mavi is a globally recognized fashion brand that serves customers through retail, wholesale, and digital channels in
-          <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'> 34 countries. </span>
-          With a team of 5,872 employees, the brand blends global reach with local insight. Embracing its
+          Mavi is a globally recognized fashion brand that serves customers through retail, wholesale, and digital channels in 34 countries. With a team of 5,872 employees, the brand blends global reach with local insight. Embracing its
           <span className='font-semibold'> “Perfect Fit” philosophy, </span>
           Mavi designs
           <span className='font-semibold'> denim and lifestyle products </span>
           tailored to customers’ needs, supported by a loyalty program with over
-          <span className='underline underline-offset-4 decoration-[0.12rem] decoration-red-500'> 10,000,000 members </span>
+          <span className='font-semibold'> 10,000,000 members </span>
           that drives data-informed, user-centered experiences.
         </p>
-        <p className='mt-4'>
+        <p className='mt-6'>
           <span className='font-extrabold'>Project scope: </span>
           Through in-depth interviews with users and store staff, user behaviors during the decision-making process were explored, along with key factors influencing purchasing intent. Insights from this research informed an analysis of the
           <span className='font-semibold'> overall shopping experience </span>
-          and helped
-          <span className='font-semibold'> identify pain points. </span>
-          Based on these findings, UX and UI design solutions were developed to improve engagement, streamline the journey, and better align with user expectations.
+          and helped identify pain points. Based on these findings, UX and UI design solutions were developed to improve engagement, streamline the journey, and better align with user expectations.
         </p>
       </div>
 
-      <div className='flex flex-col mt-24'>
+      {/* <div className='flex flex-col mt-24'>
         <div className="grid justify-center">
           <h2 className='text-2xl font-normal underline decoration-[0.10rem] decoration-wavy underline-offset-4 decoration-mavi-yellow'>
             RESEARCH
           </h2>
         </div>
         <ResearchCards researchCards={researchCards} />
-      </div>
+      </div> */}
     </Section>
   )
 }

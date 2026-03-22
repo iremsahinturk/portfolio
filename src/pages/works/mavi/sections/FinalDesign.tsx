@@ -19,23 +19,20 @@ const wireframeList = [
   "Homepage",
   "Product listing",
   "Product detail",
-  "Jean guide",
-  "Online Maviolog",
-  "Style suggestions"
+  "Jean guide (New)",
+  "Online Maviolog (New)",
+  "Style suggestions (New)",
 ]
 
 export const FinalDesign = () => {
   return (
-    <Section id="final-design" title="Final Design">
-      <div className='grid justify-center mx-auto max-w-3xl px-4 lg:px-6 mt-16'>
-        <p className='text-xl leading-9 tracking-wide'>
-          The UI designs in this section reflect solutions developed in response to insights gathered from users and store staff. You can explore how these solutions are implemented across the&nbsp;
-          <span className='font-semibold'>most critical user flows</span>
-          &nbsp;— selected from the 11 flows detailed in the Wireframe section:
+    <Section id="final-design" title="Final Design" backgroundColor="theme-yellow" titleColor="black">
+      <div className="flex flex-col mx-auto max-w-3xl px-4 md:px-0 mt-16">
+        <p className='text-sm leading-7 tracking-wide'>
+          The UI designs in this section reflect solutions developed in response to insights gathered from users and store staff. You can explore how these solutions are implemented across the most critical user flows — selected from the 11 flows detailed in the Wireframe section:
         </p>
-        <br />
-        <div className='pl-7 text-xl leading-9 tracking-wide'>
-          <ul className='list-disc list-outside gap-4'>
+        <div className='pl-7 text-sm leading-7 tracking-wide'>
+          <ul className='list-disc list-outside'>
             {wireframeList.map((item) => (
               <li key={item}>
                 <span>{item}</span>
