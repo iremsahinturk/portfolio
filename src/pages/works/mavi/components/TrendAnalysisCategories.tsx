@@ -10,8 +10,8 @@ export const TrendAnalysisCategories = ({ categories }: { categories: any[] }) =
             key={i}
             className="flex flex-col bg-mavi-yellow-background rounded-lg p-8 w-[483px]"
           >
-            <h3 className='font-medium text-xl uppercase tracking-wide'>{category?.title}</h3>
-            <p className="mt-6 text-xl leading-8 font-extralight">
+            <h3 className='font-semibold text-sm uppercase tracking-wide'>{category?.title}</h3>
+            <p className="mt-6 text-sm leading-7 font-light">
               {category?.texts?.map((text: React.ReactNode, index: number) => (
                 <span key={index}>
                   {index > 0 && <>&nbsp;</>}

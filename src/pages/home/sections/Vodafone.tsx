@@ -2,8 +2,10 @@ import vodafoneLogo from '@/assets/vodafone/vodafone-logo-title.svg';
 import headerBlueTriangle from '@/assets/vodafone/header-blue-triangle.svg';
 import vodafoneHomePhoneApp from '@/assets/vodafone/vodafone-home-phone-app.svg';
 import { Button } from "@/common/shadcn/components/button";
+import { useNavigate } from "react-router";
 
 export const Vodafone = () => {
+  const navigate = useNavigate();
   return (
     <section id="work" className="relative bg-vodafone-soft-blue-background">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-50 px-6 py-16 md:grid-cols-2 md:py-20">
@@ -50,6 +52,7 @@ export const Vodafone = () => {
               <Button
                 className='bg-red-600 text-white hover:bg-red-700/80 h-[64px] w-[367px] rounded-[40px] text-base'
                 size="lg"
+                onClick={() => navigate("works/vodafone-project")}
               >View Project
               </Button>
             </div>

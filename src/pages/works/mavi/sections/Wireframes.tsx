@@ -1,5 +1,7 @@
 import { Section } from "@/common/components/Section"
-import wireframeScreenshots from '@/assets/mavi/wireframe-screenshots.svg';
+import { RelevantCarousel } from "../components/RelevantCarousel";
+import wireframeDesktop from '@/assets/mavi/wireframe-desktop.svg';
+import wireframeMobile from '@/assets/mavi/wireframe-mobile.svg';
 
 const wireframeList = [
   "Homepage",
@@ -38,9 +40,7 @@ export const Wireframes = () => {
           </ul>
         </div>
       </div>
-      <div className='w-full mt-16'>
-        <img src={wireframeScreenshots} alt="Wireframe Screenshots" loading='lazy' className='w-full h-auto' />
-      </div>
+      <RelevantCarousel carouselItems={[wireframeDesktop, wireframeMobile]} />
     </Section>
   )
 }

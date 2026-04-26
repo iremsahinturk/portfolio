@@ -7,10 +7,8 @@ export const Introduction = () => {
     <section>
       <div className="bg-theme-yellow mb-16 ">
         <div className="mx-auto max-w-7xl px-4 lg:px-6 py-10 lg:py-16 grid lg:grid-cols-2 gap-15 items-center">
-          <div className='relative'>
-            <div className='grid place-items-center'>
-              <img src={maviWebHomepage} alt="Mavi Web Homepage" loading='lazy' />
-            </div>
+          <div className='grid place-items-center'>
+            <img src={maviWebHomepage} alt="Mavi Web Homepage" loading='lazy' />
           </div>
           <div className='flex flex-col gap-9'>
             <div>
@@ -89,7 +87,7 @@ export const Introduction = () => {
                   <a href="#mental-model">Mental model</a>
                 </li>
                 <li>
-                  <a href="#trends">Trends study</a>
+                  <a href="#trends-study">Trends study</a>
                 </li>
               </ul>
             </div>

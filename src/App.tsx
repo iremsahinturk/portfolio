@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router'
 import Header from './common/layout/Header'
 
 const MaviProject = lazy(() => import('@/pages/works/mavi/MaviProject.tsx'))
+const VodafoneProject = lazy(() => import('@/pages/works/vodafone/VodafoneProject.tsx'))
 const Home = lazy(() => import('@/pages/home/Home.tsx'))
 const About = lazy(() => import('@/pages/about/About.tsx'))
 
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/works">
           <Route path="mavi-project" element={<MaviProject />} />
+          <Route path="vodafone-project" element={<VodafoneProject />} />
         </Route>
         <Route path="/about" element={<About />} />
       </Route>
