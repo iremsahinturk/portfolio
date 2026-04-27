@@ -15,7 +15,7 @@ export default defineConfig(({command}) => {
     base: "/",
   }
   if (command !== 'serve') {
-    config.base = '/irem-portfolio/'
+    config.base = '/portfolio/'
   }
 
   return config

@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router basename={import.meta.env.DEV ? '/' : '/irem-portfolio/'}>
+    <Router basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
       <App />
     </Router>
   </StrictMode>,
