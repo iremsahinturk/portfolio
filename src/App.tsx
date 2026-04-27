@@ -1,6 +1,7 @@
 import { lazy, useEffect } from 'react'
 import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router'
 import Header from './common/layout/Header'
+import PasswordProtection from './common/components/PasswordProtection'
 
 const Work = lazy(() => import('@/pages/work/Work'))
 const About = lazy(() => import('@/pages/about/About.tsx'))
@@ -16,21 +17,21 @@ export default function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  console.log(import.meta.env.VITE_APP_PASSWORD)
-
   return (
-    <Routes>
-      <Route element={<Header />}>
-        <Route path="/work" element={<Outlet />}>
-          <Route index element={<Work />} />
-          <Route path="mavi-project" element={<MaviProject />} />
-          <Route path="vodafone-project" element={<VodafoneProject />} />
-          <Route path="vakifbank-project" element={<VakifbankProject />} />
+    <PasswordProtection>
+      <Routes>
+        <Route element={<Header />}>
+          <Route path="/work" element={<Outlet />}>
+            <Route index element={<Work />} />
+            <Route path="mavi-project" element={<MaviProject />} />
+            <Route path="vodafone-project" element={<VodafoneProject />} />
+            <Route path="vakifbank-project" element={<VakifbankProject />} />
+          </Route>
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/work" replace />} />
         </Route>
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="*" element={<Navigate to="/work" replace />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </PasswordProtection>
   );
 }

@@ -7,4 +7,5 @@ install:
 	@corepack enable && yarn install
 
 run:
-	@yarn dev
+	VITE_APP_PASSWORD=deneme \
+	yarn dev
