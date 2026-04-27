@@ -16,6 +16,8 @@ export default function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  console.log(import.meta.env.VITE_APP_PASSWORD)
+
   return (
     <Routes>
       <Route element={<Header />}>

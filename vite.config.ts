@@ -13,6 +13,7 @@ export default defineConfig(({command}) => {
       },
     },
     base: "/",
+    envDir: "./envs"
   }
   if (command !== 'serve') {
     config.base = '/portfolio/'

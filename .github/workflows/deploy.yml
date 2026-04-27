@@ -40,6 +40,14 @@ jobs:
           corepack enable
       - name: Install dependencies
         run: yarn install
+      - name: Setup Env
+        run: |
+          # Create or truncate the .env file
+          : > envs/.env
+
+          cat <<-EOF > envs/.env
+          VITE_APP_PASSWORD=${{ secrets.APP_PASSWORD }}
+          EOF
       - name: Build
         run: |
           yarn build
