@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/common/shadcn/components/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/common/shadcn/components/carousel"
 import { useEffect, useState } from "react"
 
-export const CarouselWithTitle = ({ carouselItems, title }: { carouselItems: any[], title?: string }) => {
+export const GalleryCarousel = ({ carouselItems, title }: { carouselItems: any[], title?: string }) => {
   const [mainApi, setMainApi] = useState<CarouselApi>()
   const [thumbApi, setThumbApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)

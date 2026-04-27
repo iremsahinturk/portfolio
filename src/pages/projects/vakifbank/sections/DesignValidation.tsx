@@ -3,7 +3,7 @@ import designValidation1 from '@/assets/vakifbank/design-validation-1.svg';
 import designValidation2 from '@/assets/vakifbank/design-validation-2.svg';
 import designValidation3 from '@/assets/vakifbank/design-validation-3.svg';
 import designValidation4 from '@/assets/vakifbank/design-validation-4.svg';
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
+import { GalleryCarousel } from "@/common/components/GalleryCarousel";
 
 
 export const DesignValidation = () => {
@@ -31,7 +31,7 @@ export const DesignValidation = () => {
           The following examples highlight some of the key changes we implemented based on user feedback and observed behavior during testing.
         </p>
       </div>
-      <CarouselWithTitle
+      <GalleryCarousel
         carouselItems={[
           designValidation1,
           designValidation2,

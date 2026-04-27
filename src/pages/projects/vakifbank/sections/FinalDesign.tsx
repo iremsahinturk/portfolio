@@ -9,7 +9,7 @@ import finalDesignDetail6 from '@/assets/vakifbank/final-design-detail-6.svg';
 import finalDesignDetail7 from '@/assets/vakifbank/final-design-detail-7.svg';
 import finalDesignDetail8 from '@/assets/vakifbank/final-design-detail-8.svg';
 
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
+import { GalleryCarousel } from "@/common/components/GalleryCarousel";
 
 export const FinalDesign = () => {
   return (
@@ -37,7 +37,7 @@ export const FinalDesign = () => {
           </video>
         </div>
       </div>
-      <CarouselWithTitle 
+      <GalleryCarousel 
         carouselItems={[
           finalDesignDetail1,
           finalDesignDetail2,

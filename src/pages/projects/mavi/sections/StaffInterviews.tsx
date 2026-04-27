@@ -1,47 +1,46 @@
 import { Section } from "@/common/components/Section"
 import storeInterviewPlan from '@/assets/mavi/store-interview-plan.svg';
-import { KeyInsights } from "../components/KeyInsigths";
 import staffKeyInsights1 from '@/assets/mavi/staff-key-insights-1.svg';
 import staffKeyInsights2 from '@/assets/mavi/staff-key-insights-2.svg';
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
+import { GalleryCarousel } from "@/common/components/GalleryCarousel";
 
-const staffInterviewInsights = [
-  {
-    title: "JEAN SELECTION",
-    quote: "During the COVID period, customers were hesitant to visit stores, so they called to ask about the fabric, fit, and details of the jeans.",
-    bottom: "Since customers can’t replicate the in-store experience online, they call store staff for guidance and product advice.",
-  },
-  {
-    title: "BEHIND THE COLLECTIONS",
-    quote: 'Some customers ask what the “eco–friendly” theme actually means.',
-    bottom: "The “eco–friendly” theme features collections like All Blue and reflects a commitment to sustainable production and resource conservation.",
-  },
-  {
-    title: "JEAN SELECTION",
-    quote: "Customers are not familiar with the stories or features of collections other than All Blue, and they frequently ask us about them.",
-    bottom: "Each collection has its own story and features, but users often don’t know what they include—despite recognizing the names.",
-  },
-  {
-    title: "SIZE SELECTION",
-    quote: "For rigid, 100% cotton jeans with no elastane, I warn customers before they try them on, as the fabric doesn’t stretch, and I usually offer one size up.",
-    bottom: "Jean sizing varies depending on the fabric composition, as the size can change based on how stretchy the denim is.",
-  },
-  {
-    title: "ASSISTANCE",
-    quote: "When a customer is unsure about which jean to choose, we ask about their style, preferred leg cut, color, and fabric to recommend the most suitable fit.",
-    bottom: "Key decision criteria for users include their clothing style, preferred jean cut, color, and fabric.",
-  },
-  {
-    title: "MIX & MATCH",
-    quote: "Customers often ask for our advice when putting together outfits, and they usually want to try the combinations they see on the models.",
-    bottom: "Seeing visual outfit options plays an important role in users’ decision-making when styling an outfit.",
-  },
-  {
-    title: "STOCK AVAILABILITY",
-    quote: "When their size isn’t available online, some users call stores to check.",
-    bottom: "Users cannot see in-store stock availability on the product detail pages.",
-  },
-];
+// const staffInterviewInsights = [
+//   {
+//     title: "JEAN SELECTION",
+//     quote: "During the COVID period, customers were hesitant to visit stores, so they called to ask about the fabric, fit, and details of the jeans.",
+//     bottom: "Since customers can’t replicate the in-store experience online, they call store staff for guidance and product advice.",
+//   },
+//   {
+//     title: "BEHIND THE COLLECTIONS",
+//     quote: 'Some customers ask what the “eco–friendly” theme actually means.',
+//     bottom: "The “eco–friendly” theme features collections like All Blue and reflects a commitment to sustainable production and resource conservation.",
+//   },
+//   {
+//     title: "JEAN SELECTION",
+//     quote: "Customers are not familiar with the stories or features of collections other than All Blue, and they frequently ask us about them.",
+//     bottom: "Each collection has its own story and features, but users often don’t know what they include—despite recognizing the names.",
+//   },
+//   {
+//     title: "SIZE SELECTION",
+//     quote: "For rigid, 100% cotton jeans with no elastane, I warn customers before they try them on, as the fabric doesn’t stretch, and I usually offer one size up.",
+//     bottom: "Jean sizing varies depending on the fabric composition, as the size can change based on how stretchy the denim is.",
+//   },
+//   {
+//     title: "ASSISTANCE",
+//     quote: "When a customer is unsure about which jean to choose, we ask about their style, preferred leg cut, color, and fabric to recommend the most suitable fit.",
+//     bottom: "Key decision criteria for users include their clothing style, preferred jean cut, color, and fabric.",
+//   },
+//   {
+//     title: "MIX & MATCH",
+//     quote: "Customers often ask for our advice when putting together outfits, and they usually want to try the combinations they see on the models.",
+//     bottom: "Seeing visual outfit options plays an important role in users’ decision-making when styling an outfit.",
+//   },
+//   {
+//     title: "STOCK AVAILABILITY",
+//     quote: "When their size isn’t available online, some users call stores to check.",
+//     bottom: "Users cannot see in-store stock availability on the product detail pages.",
+//   },
+// ];
 
 export const StoreStaffInterviews = () => {
   return (
@@ -88,7 +87,7 @@ export const StoreStaffInterviews = () => {
           </div>
         </div>
 
-        <CarouselWithTitle 
+        <GalleryCarousel 
           carouselItems={[
             staffKeyInsights1,
             staffKeyInsights2,

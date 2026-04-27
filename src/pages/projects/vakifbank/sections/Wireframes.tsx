@@ -6,7 +6,7 @@ import datasetDetail3 from '@/assets/vakifbank/dataset-detail-3.svg';
 import datasetDetailScreenshot from '@/assets/vakifbank/dataset-detail-screenshot.svg';
 import labelingPageBenchmarks from '@/assets/vakifbank/labeling-page-benchmarks.svg';
 import labelingScreenshot from '@/assets/vakifbank/labeling-screenshot.svg';
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
+import { GalleryCarousel } from "@/common/components/GalleryCarousel";
 
 export const Wireframes = () => {
   return (
@@ -43,7 +43,7 @@ export const Wireframes = () => {
         </p>
       </div>
 
-      <CarouselWithTitle 
+      <GalleryCarousel 
         carouselItems={[
           datasetDetail1,
           datasetDetail2,

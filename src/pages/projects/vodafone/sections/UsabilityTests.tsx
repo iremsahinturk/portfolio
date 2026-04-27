@@ -3,46 +3,46 @@ import usabilityTestInterviewPlan from '@/assets/vodafone/usability-test-intervi
 import talkBubble from '@/assets/mavi/talk-bubble.svg';
 import usabilityTestsKeyInsights1 from '@/assets/vodafone/usability-tests-key-insights-1.svg';
 import usabilityTestsKeyInsights2 from '@/assets/vodafone/usability-tests-key-insights-2.svg';
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
+import { GalleryCarousel } from "@/common/components/GalleryCarousel";
 
 
-const insights = [
-  {
-    title: "FLEXIBILITY IN OFFERS",
-    quote: "Sometimes, there’s a campaign I’m not interested in, and I want to replace it with a surprise one instead.",
-    bottom: "Even though there are many different campaigns available, users aren’t given the option to change their offers.",
-  },
-  {
-    title: "CONTENT EXPECTATIONS",
-    quote: 'Since I’ve been a Vodafone customer for 12 years, I expect a special offer or gift on my birthday.',
-    bottom: "Even though users’ birthdays are known, no content or campaigns are created around them.",
-  },
-  {
-    title: "UNAWARE OF UPDATES",
-    quote: "I occasionally check to see if there’s anything new, but it doesn’t really cross my mind that often.",
-    bottom: "Users don’t check the Rewards section frequently because they aren’t aware when new rewards are added.",
-  },
-  {
-    title: "OFFLINE PROCESS ",
-    quote: "While trying to benefit from the discounted modem campaign, the app directs me to a store to complete the process.",
-    bottom: "In the modem and home internet flows, users are sent to a store to finish the process, even though it’s been handled online for the past three years.",
-  },
-  {
-    title: "INITIAL THOUGHTS",
-    quote: "Seeing the gift icon and the name My Rewards makes me expect personalized offers based on my shopping activity and mobile usage.",
-    bottom: "Despite partnerships with popular brands and knowing most users’ shopping habits, My Rewards still offers only data and storage rewards.",
-  },
-  {
-    title: "INCONSISTENT VISUALS",
-    quote: "New campaigns are added, but the visuals look the same, so it’s hard to tell which ones are new. The same visuals are used for both internet and phone campaigns.",
-    bottom: "Even though the content of the cards changes, similar visuals are used, and the visuals don’t match the content.",
-  },
-  {
-    title: "FEELING SPECIAL",
-    quote: "It says it’s personalized for me, but I feel like the same message is shown to everyone. I’ve been a customer for years.",
-    bottom: "Because they have been Vodafone customers for many years and for similar reasons, users want to feel special and experience a more personalized journey.",
-  },
-];
+// const insights = [
+//   {
+//     title: "FLEXIBILITY IN OFFERS",
+//     quote: "Sometimes, there’s a campaign I’m not interested in, and I want to replace it with a surprise one instead.",
+//     bottom: "Even though there are many different campaigns available, users aren’t given the option to change their offers.",
+//   },
+//   {
+//     title: "CONTENT EXPECTATIONS",
+//     quote: 'Since I’ve been a Vodafone customer for 12 years, I expect a special offer or gift on my birthday.',
+//     bottom: "Even though users’ birthdays are known, no content or campaigns are created around them.",
+//   },
+//   {
+//     title: "UNAWARE OF UPDATES",
+//     quote: "I occasionally check to see if there’s anything new, but it doesn’t really cross my mind that often.",
+//     bottom: "Users don’t check the Rewards section frequently because they aren’t aware when new rewards are added.",
+//   },
+//   {
+//     title: "OFFLINE PROCESS ",
+//     quote: "While trying to benefit from the discounted modem campaign, the app directs me to a store to complete the process.",
+//     bottom: "In the modem and home internet flows, users are sent to a store to finish the process, even though it’s been handled online for the past three years.",
+//   },
+//   {
+//     title: "INITIAL THOUGHTS",
+//     quote: "Seeing the gift icon and the name My Rewards makes me expect personalized offers based on my shopping activity and mobile usage.",
+//     bottom: "Despite partnerships with popular brands and knowing most users’ shopping habits, My Rewards still offers only data and storage rewards.",
+//   },
+//   {
+//     title: "INCONSISTENT VISUALS",
+//     quote: "New campaigns are added, but the visuals look the same, so it’s hard to tell which ones are new. The same visuals are used for both internet and phone campaigns.",
+//     bottom: "Even though the content of the cards changes, similar visuals are used, and the visuals don’t match the content.",
+//   },
+//   {
+//     title: "FEELING SPECIAL",
+//     quote: "It says it’s personalized for me, but I feel like the same message is shown to everyone. I’ve been a customer for years.",
+//     bottom: "Because they have been Vodafone customers for many years and for similar reasons, users want to feel special and experience a more personalized journey.",
+//   },
+// ];
 
 export const UsabilityTests = () => {
   return (
@@ -85,7 +85,7 @@ export const UsabilityTests = () => {
             <img src={usabilityTestInterviewPlan} alt="Usability Test Interview Plan" loading='lazy' />
           </div>
         </div>
-        <CarouselWithTitle 
+        <GalleryCarousel 
           carouselItems={[
             usabilityTestsKeyInsights1,
             usabilityTestsKeyInsights2,

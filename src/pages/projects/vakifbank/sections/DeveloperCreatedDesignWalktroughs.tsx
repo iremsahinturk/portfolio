@@ -1,4 +1,4 @@
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle"
+import { GalleryCarousel } from "@/common/components/GalleryCarousel"
 import { Section } from "@/common/components/Section"
 import aiPlatformConcept1 from '@/assets/vakifbank/ai-platform-concept-screens-1.svg';
 import aiPlatformConcept2 from '@/assets/vakifbank/ai-platform-concept-screens-2.svg';
@@ -30,7 +30,7 @@ export const DeveloperCreatedDesignWalktroughs = () => {
         </p>
       </div>
 
-      <CarouselWithTitle 
+      <GalleryCarousel 
         carouselItems={[
           aiPlatformConcept1, 
           aiPlatformConcept2, 

@@ -1,5 +1,5 @@
 import { Section } from "@/common/components/Section"
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
+import { GalleryCarousel } from "@/common/components/GalleryCarousel";
 import wireframeDesktop from '@/assets/mavi/wireframe-desktop.svg';
 import wireframeMobile from '@/assets/mavi/wireframe-mobile.svg';
 
@@ -40,7 +40,7 @@ export const Wireframes = () => {
           </ul>
         </div>
       </div>
-      <CarouselWithTitle carouselItems={[wireframeDesktop, wireframeMobile]} />
+      <GalleryCarousel carouselItems={[wireframeDesktop, wireframeMobile]} />
     </Section>
   )
 }

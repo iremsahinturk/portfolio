@@ -1,4 +1,4 @@
-import { CarouselWithTitle } from "@/common/components/CarouselWithTitle"
+import { GalleryCarousel } from "@/common/components/GalleryCarousel"
 import { Section } from "@/common/components/Section"
 import finalDesign1 from '@/assets/mavi/final-design-1.svg';
 import finalDesign2 from '@/assets/mavi/final-design-2.svg';
@@ -41,7 +41,7 @@ export const FinalDesign = () => {
           </ul>
         </div>
       </div>
-      <CarouselWithTitle carouselItems={[
+      <GalleryCarousel carouselItems={[
         finalDesign1, finalDesign2, finalDesign3, finalDesign4, finalDesign5, finalDesign6, finalDesign7, finalDesign8, finalDesign9, finalDesign10, finalDesign11, finalDesign12, finalDesign13
       ]} />
     </Section>
