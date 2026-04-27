@@ -5,6 +5,7 @@ export const Section = ({
   titleColor = "white",
   children,
   title,
+  paddingY = "py-8"
 }: {
   id: string;
   className?: string;
@@ -12,6 +13,7 @@ export const Section = ({
   titleColor?: string;
   children: React.ReactNode;
   title?: string;
+  paddingY?: string;
 }) => (
   <section
     id={id}
@@ -19,7 +21,7 @@ export const Section = ({
     aria-labelledby={`${id}-title`}
   >
     {title && (
-      <header className={`py-8 bg-${backgroundColor} text-${titleColor} grid justify-center`}>
+      <header className={`${paddingY} bg-${backgroundColor} text-${titleColor} grid justify-center`}>
         <h2
           id={`${id}-title`}
           className="text-2xl font-normal tracking-tight text-center"

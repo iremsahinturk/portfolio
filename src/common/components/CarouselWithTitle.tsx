@@ -48,7 +48,7 @@ export const CarouselWithTitle = ({ carouselItems, title }: { carouselItems: any
   }
 
   return (
-    <div className="max-w-full mx-auto mt-24 px-10">
+    <div className="max-w-full mx-auto mt-24 px-20">
       { title && (
         <h2 className="text-2xl tracking-wider font-semibold text-center">
           {title}

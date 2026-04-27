@@ -1,19 +1,24 @@
 import emailIcon from '@/assets/about/email-icon.svg'
-import linkedinLogo from '@/assets/about/linkedin-logo.svg'
+import linkedinIcon from '@/assets/about/linkedin-icon.svg'
 
 export const Connect = () => {
   return (
-    <div className="flex flex-col items-center gap-10 my-12">
-      <p className='text-2xl leading-9 tracking-wider text-mavi font-medium'>Let’s connect</p>
-      <p className='text-2xl leading-9 tracking-wider text-mavi'>Get in touch for opportunities or just say hi!</p>
-      <div className="flex gap-12">
+    <section className='my-12'>
+    <div className="flex flex-col items-center gap-8">
+      <div className='flex flex-col items-center text-base leading-7 tracking-wide'>
+        <p className='font-medium'>Let’s connect</p>
+        <br />
+        <p >Get in touch for opportunities or just say hi!</p>
+      </div>
+      <div className="flex gap-6">
         <a href="https://www.linkedin.com/in/iremsahinturk" target="_blank" rel="noopener noreferrer">
-          <img className='bg-black' src={linkedinLogo} alt="LinkedIn Icon" />
+          <img src={linkedinIcon} alt="LinkedIn Icon" />
         </a>
         <a href="mailto:iremtosn@gmail.com" target="_blank" rel="noopener noreferrer">
           <img src={emailIcon} alt="Email Icon" />
         </a>
       </div>
     </div>
+  </section>
   )
 }
