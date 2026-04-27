@@ -139,7 +139,7 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#final-designs">Final designs</a>
+                  <a href="#final-design">Final design</a>
                 </li>
                 <li>
                   <a href="#results">Results</a>

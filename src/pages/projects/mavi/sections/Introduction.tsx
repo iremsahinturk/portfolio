@@ -75,7 +75,7 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#store-stuff-in-depth-interviews">Store stuff In-depth interviews (4)</a>
+                  <a href="#staff-in-depth-interviews">Staff In-depth interviews (4)</a>
                 </li>
                 <li>
                   <a href="#user-interviews">User interviews (6)</a>

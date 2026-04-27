@@ -1,7 +1,9 @@
 import { Section } from "@/common/components/Section"
 import usabilityTestInterviewPlan from '@/assets/vodafone/usability-test-interview-plan.svg';
 import talkBubble from '@/assets/mavi/talk-bubble.svg';
-import person1 from '@/assets/mavi/person-1.svg';
+import usabilityTestsKeyInsights1 from '@/assets/vodafone/usability-tests-key-insights-1.svg';
+import usabilityTestsKeyInsights2 from '@/assets/vodafone/usability-tests-key-insights-2.svg';
+import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
 
 
 const insights = [
@@ -83,13 +85,20 @@ export const UsabilityTests = () => {
             <img src={usabilityTestInterviewPlan} alt="Usability Test Interview Plan" loading='lazy' />
           </div>
         </div>
-        <KeyInsights
+        <CarouselWithTitle 
+          carouselItems={[
+            usabilityTestsKeyInsights1,
+            usabilityTestsKeyInsights2,
+          ]}
+          title="Key insights"
+        />
+        {/* <KeyInsights
           insights={insights}
           personImg={person1}
           bubbleText="I used this add-on campaign, but I couldn’t figure out when I can start using it."
           bgColor="theme-green"
           borderColor="theme-green-border"
-        />
+        /> */}
     </Section>
   )
 }

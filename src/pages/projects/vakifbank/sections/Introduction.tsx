@@ -1,3 +1,4 @@
+import vakifVideo from '@/assets/vakifbank/vakif-video.mov';
 import vakifHomepage from '@/assets/vakifbank/vakif-homepage.svg';
 import vakifLogo from '@/assets/vakifbank/vakif-logo.svg';
 import introCardIcon1 from '@/assets/vakifbank/intro-card-icon-1.svg';
@@ -10,7 +11,18 @@ export const Introduction = () => {
       <div className="bg-theme-blue">
         <div className="mx-auto max-w-7xl px-6 py-20 grid grid-cols-2 gap-15 items-center">
           <div className='grid place-items-center'>
-            <img src={vakifHomepage} alt="Vakifbank Homepage" loading='lazy' />
+            <video
+              src={vakifVideo}
+              poster={vakifHomepage}
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="w-full h-auto"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div className='flex flex-col gap-9 text-white'>
             <div>
@@ -78,7 +90,7 @@ export const Introduction = () => {
               </div>
               <div className='flex items-center bg-theme-blue-2 border-t-[#5D7DAF] border-t-[3px] p-6 text-center text-sm h-[140px]'>
                 <span>
-                  Redesigned navigation, dataset, and labeling workflows 
+                  Redesigned navigation, dataset, and labeling workflows
                 </span>
               </div>
             </div>
@@ -139,7 +151,7 @@ export const Introduction = () => {
                   <a href="#design-validation">Design validation</a>
                 </li>
                 <li>
-                  <a href="#final-designs">Final designs</a>
+                  <a href="#final-design">Final design</a>
                 </li>
                 <li>
                   <a href="#key-learnings">Key learnings</a>

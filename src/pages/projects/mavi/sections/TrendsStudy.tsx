@@ -5,6 +5,9 @@ import trendCategories from '@/assets/mavi/trend-categories.svg';
 import trendExample1 from '@/assets/mavi/trend-example-1.svg';
 import trendExample2 from '@/assets/mavi/trend-example-2.svg';
 import trendExample3 from '@/assets/mavi/trend-example-3.svg';
+import trendAnalysisCategories1 from '@/assets/mavi/trend-analysis-categories-1.svg';
+import trendAnalysisCategories2 from '@/assets/mavi/trend-analysis-categories-2.svg';
+import trendAnalysisCategories3 from '@/assets/mavi/trend-analysis-categories-3.svg';
 
 const trendAnalysisCategories = [
   {
@@ -116,7 +119,15 @@ export const TrendsStudy = () => {
           </p>
         </div>
       </div>
-      <TrendAnalysisCategories categories={trendAnalysisCategories} />
+      <CarouselWithTitle 
+          carouselItems={[
+            trendAnalysisCategories1,
+            trendAnalysisCategories2,
+            trendAnalysisCategories3
+          ]}
+          title="Trend analysis categories"
+        />
+      {/* <TrendAnalysisCategories categories={trendAnalysisCategories} /> */}
       <CarouselWithTitle carouselItems={[trendExample1, trendExample2, trendExample3]} title="Relevant Trend Examples Aligned with the Insights" />
     </Section>
   )

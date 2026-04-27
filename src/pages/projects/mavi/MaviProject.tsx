@@ -1,7 +1,7 @@
 
 import { Introduction } from './sections/Introduction';
 import { AboutProject } from './sections/AboutProject';
-import { StoreStuffInterviews } from './sections/StoreStuffInterviews';
+import { StoreStaffInterviews } from './sections/StaffInterviews';
 import { UserInterviews } from './sections/UserInterviews';
 import { BrandBenchmarking } from './sections/BrandBenchmarking';
 import { TrendsStudy } from './sections/TrendsStudy';
@@ -15,7 +15,7 @@ export default function MaviProject() {
     <div className="font-light scroll-smooth relative">
       <Introduction />
       <AboutProject />
-      <StoreStuffInterviews />
+      <StoreStaffInterviews />
       <UserInterviews />
       <BrandBenchmarking />
       <MentalModel />

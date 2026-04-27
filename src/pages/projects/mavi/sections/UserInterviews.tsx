@@ -1,7 +1,9 @@
 import { KeyInsights } from "../components/KeyInsigths"
 import { Section } from "@/common/components/Section"
 import storeInterviewPlan from '@/assets/mavi/store-interview-plan.svg';
-import person2 from '@/assets/mavi/person-2.svg';
+import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
+import userInterviewsKeyInsights1 from '@/assets/mavi/user-interviews-key-insights-1.svg';
+import userInterviewsKeyInsights2 from '@/assets/mavi/user-interviews-key-insights-2.svg';
 
 const userInterviewInsights = [
   {
@@ -84,11 +86,19 @@ export const UserInterviews = () => {
         </div>
       </div>
 
-      <KeyInsights
+      <CarouselWithTitle 
+          carouselItems={[
+            userInterviewsKeyInsights1,
+            userInterviewsKeyInsights2,
+          ]}
+          title="Key insights"
+        />
+
+      {/* <KeyInsights
         insights={userInterviewInsights}
         personImg={person2}
         bubbleText="The jeans names on the listing page don’t clearly show their differences, so as a user, I need to check each detail page individually."
-      />
+      /> */}
     </Section>
   )
 }
