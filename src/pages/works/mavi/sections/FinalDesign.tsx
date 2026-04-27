@@ -1,4 +1,4 @@
-import { RelevantCarousel } from "../components/RelevantCarousel"
+import { CarouselWithTitle } from "@/common/components/CarouselWithTitle"
 import { Section } from "@/common/components/Section"
 import finalDesign1 from '@/assets/mavi/final-design-1.svg';
 import finalDesign2 from '@/assets/mavi/final-design-2.svg';
@@ -27,7 +27,7 @@ const wireframeList = [
 export const FinalDesign = () => {
   return (
     <Section id="final-design" title="Final Design" backgroundColor="theme-yellow" titleColor="black">
-      <div className="flex flex-col mx-auto max-w-3xl px-4 md:px-0 mt-16">
+      <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
         <p className='text-sm leading-7 tracking-wide'>
           The UI designs in this section reflect solutions developed in response to insights gathered from users and store staff. You can explore how these solutions are implemented across the most critical user flows — selected from the 11 flows detailed in the Wireframe section:
         </p>
@@ -41,7 +41,7 @@ export const FinalDesign = () => {
           </ul>
         </div>
       </div>
-      <RelevantCarousel carouselItems={[
+      <CarouselWithTitle carouselItems={[
         finalDesign1, finalDesign2, finalDesign3, finalDesign4, finalDesign5, finalDesign6, finalDesign7, finalDesign8, finalDesign9, finalDesign10, finalDesign11, finalDesign12, finalDesign13
       ]} />
     </Section>

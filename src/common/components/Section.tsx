@@ -15,7 +15,7 @@ export const Section = ({
 }) => (
   <section
     id={id}
-    className={`my-20 ${className}`}
+    className={`my-20 ${className} scroll-mt-24`}
     aria-labelledby={`${id}-title`}
   >
     {title && (

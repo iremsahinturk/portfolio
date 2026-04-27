@@ -1,5 +1,5 @@
 import { Section } from "@/common/components/Section"
-import { RelevantCarousel } from "../components/RelevantCarousel";
+import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
 import wireframeDesktop from '@/assets/mavi/wireframe-desktop.svg';
 import wireframeMobile from '@/assets/mavi/wireframe-mobile.svg';
 
@@ -20,7 +20,7 @@ const wireframeList = [
 export const Wireframes = () => {
   return (
     <Section id="wireframes" title="Wireframes" backgroundColor="theme-yellow" titleColor="black">
-      <div className="flex flex-col mx-auto max-w-3xl px-4 md:px-0 mt-16">
+      <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
         <p className='text-sm leading-7 tracking-wide'>
           We created &nbsp;
           <span className='font-semibold'>high-fidelity wireframes</span>
@@ -40,7 +40,7 @@ export const Wireframes = () => {
           </ul>
         </div>
       </div>
-      <RelevantCarousel carouselItems={[wireframeDesktop, wireframeMobile]} />
+      <CarouselWithTitle carouselItems={[wireframeDesktop, wireframeMobile]} />
     </Section>
   )
 }

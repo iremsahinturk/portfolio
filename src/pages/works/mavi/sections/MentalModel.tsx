@@ -5,7 +5,7 @@ import mentalModelCardDetails from '@/assets/mavi/mental-model-card-details.svg'
 export const MentalModel = () => {
   return (
     <Section id="mental-model" title="Mental Model" backgroundColor="theme-yellow" titleColor="black">
-      <div className="flex flex-col mx-auto max-w-3xl px-4 md:px-0 mt-16">
+      <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
         <p className='max-w-3xl text-sm leading-7 tracking-wide'>
           We created a mental model by analyzing user behavior across three key stages:
           <br/>

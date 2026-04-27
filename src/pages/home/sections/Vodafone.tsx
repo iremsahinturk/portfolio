@@ -1,38 +1,31 @@
 import vodafoneLogo from '@/assets/vodafone/vodafone-logo-title.svg';
-import headerBlueTriangle from '@/assets/vodafone/header-blue-triangle.svg';
-import vodafoneHomePhoneApp from '@/assets/vodafone/vodafone-home-phone-app.svg';
-import { Button } from "@/common/shadcn/components/button";
+import vodafoneHomePhone from '@/assets/home/vodafone-home-phone.svg';
 import { useNavigate } from "react-router";
 
 export const Vodafone = () => {
   const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/works/vodafone-project");
+  };
+
   return (
-    <section id="work" className="relative bg-vodafone-soft-blue-background">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-50 px-6 py-16 md:grid-cols-2 md:py-20">
-          <img
-            alt="Vodafone app mock"
-            // className="h-[460px] w-full object-cover md:h-[520px]"
-            src={vodafoneHomePhoneApp}
-          />
-          
-
-          {/* Right text block */}
-          <div className="order-1 md:order-2 gap-12 flex flex-col">
-            {/* small icon + brand */}
-            <div className="flex flex-col">
-              <img className='relative right-15' src={headerBlueTriangle} width={37} height={34} alt="Vodafone Header Blue Triangle" />
-              <div className="flex items-center">
-                <img src={vodafoneLogo} alt="Vodafone Logo" loading='lazy' />
-              </div>
+    <section onClick={handleClick} className="cursor-pointer">
+      <div className="bg-theme-red">
+        <div className="mx-auto max-w-7xl px-6 py-5 grid lg:grid-cols-2 gap-10 items-center">
+          <div className='grid place-items-center'>
+            <img src={vodafoneHomePhone} alt="Vodafone Home Phone App" loading='lazy' />
+          </div>
+          <div className='flex flex-col gap-9'>
+            <div>
+              <img src={vodafoneLogo} alt="Vodafone Logo" loading='lazy' />
             </div>
-
-            <h2 className="text-2xl font-normal">
-              The mobile application is a digital platform where users can manage
-              their Vodafone accounts, track data usage, pay bills, and access
-              exclusive offers and services.
-            </h2>
-
-            <div className='flex flex-col gap-6'>
+            <div>
+              <h2 className="text-xl font-normal">
+                The mobile application is a digital platform where users can manage their Vodafone accounts, track data usage, pay bills, and access exclusive offers and services.
+              </h2>
+            </div>
+            <div className='flex flex-col gap-4 text-sm'>
               <p>
                 <span className='font-bold'>Project type: </span>
                 <span>Redesign ‘My Rewards’ Flow</span>
@@ -40,7 +33,7 @@ export const Vodafone = () => {
               <p>
                 <span className='font-bold'>Role: </span>
                 <span>
-                  UX researcher + UX/UI designer
+                  UX researcher + UX/UI designer (with support from Vodafone research team)
                 </span>
               </p>
               <p>
@@ -48,16 +41,9 @@ export const Vodafone = () => {
                 <span>Telecommunications, E-commerce</span>
               </p>
             </div>
-            <div>
-              <Button
-                className='bg-red-600 text-white hover:bg-red-700/80 h-[64px] w-[367px] rounded-[40px] text-base'
-                size="lg"
-                onClick={() => navigate("works/vodafone-project")}
-              >View Project
-              </Button>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
   )
 }

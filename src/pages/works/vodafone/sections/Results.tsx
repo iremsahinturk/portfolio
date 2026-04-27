@@ -6,7 +6,7 @@ export const Results = () => {
   return (
     <Section title="Results" id="results" backgroundColor="theme-red" titleColor="black">
       <div className='grid mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
-        <h2 className='text-3xl font-medium mb-4'>
+        <h2 className='text-3xl font-medium mb-8'>
           SUS score
         </h2>
         <p>
@@ -18,7 +18,7 @@ export const Results = () => {
       </div>
 
       <div className='grid mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
-        <h2 className='text-3xl font-medium mb-4'>
+        <h2 className='text-3xl font-medium mb-8'>
           Reward usage performance
         </h2>
         <p>

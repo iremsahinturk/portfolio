@@ -1,4 +1,4 @@
-import { RelevantCarousel } from "../components/RelevantCarousel"
+import { CarouselWithTitle } from "@/common/components/CarouselWithTitle"
 import { Section } from "@/common/components/Section"
 import benchmarkMiro from '@/assets/mavi/brand-benchmarking-miro.svg';
 import benchmarkExcel from '@/assets/mavi/brand-benchmarking-excel.svg';
@@ -34,7 +34,7 @@ export const BrandBenchmarking = () => {
         </div>
       </div>
 
-      <RelevantCarousel 
+      <CarouselWithTitle 
         carouselItems={[
           benchmarkExample1, 
           benchmarkExample2, 

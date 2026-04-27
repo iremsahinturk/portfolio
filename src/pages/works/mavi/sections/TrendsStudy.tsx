@@ -1,4 +1,4 @@
-import { RelevantCarousel } from "../components/RelevantCarousel";
+import { CarouselWithTitle } from "@/common/components/CarouselWithTitle";
 import { Section } from "@/common/components/Section"
 import { TrendAnalysisCategories } from "../components/TrendAnalysisCategories"
 import trendCategories from '@/assets/mavi/trend-categories.svg';
@@ -99,7 +99,7 @@ const trendAnalysisCategories = [
 export const TrendsStudy = () => {
   return (
     <Section id="trends-study" title="Trends Study" backgroundColor="theme-yellow" titleColor="black">
-      <div className="flex flex-col mx-auto max-w-3xl px-4 md:px-0 mt-16">
+      <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
         <p className='text-sm leading-7 tracking-wide'>
           The trends study explored&nbsp;
           <span className='font-semibold'>how customer expectations are evolving in today’s context</span>
@@ -117,7 +117,7 @@ export const TrendsStudy = () => {
         </div>
       </div>
       <TrendAnalysisCategories categories={trendAnalysisCategories} />
-      <RelevantCarousel carouselItems={[trendExample1, trendExample2, trendExample3]} title="Relevant Trend Examples Aligned with the Insights" />
+      <CarouselWithTitle carouselItems={[trendExample1, trendExample2, trendExample3]} title="Relevant Trend Examples Aligned with the Insights" />
     </Section>
   )
 }

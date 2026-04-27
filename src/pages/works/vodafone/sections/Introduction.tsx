@@ -1,4 +1,4 @@
-import vodafoneHomePhoneApp2 from '@/assets/vodafone/vodafone-home-phone-app-2.svg';
+import vodafonePhoneApp from '@/assets/vodafone/vodafone-phone-app.svg';
 import vodafoneLogo from '@/assets/vodafone/vodafone-logo-title.svg';
 
 export const Introduction = () => {
@@ -7,7 +7,7 @@ export const Introduction = () => {
       <div className="bg-theme-red">
         <div className="mx-auto max-w-6xl px-4 lg:px-6 py-10 grid lg:grid-cols-3 gap-15 items-center">
           <div className='grid place-items-center'>
-            <img src={vodafoneHomePhoneApp2} alt="Vodafone Home Phone App" loading='lazy' />
+            <img src={vodafonePhoneApp} alt="Vodafone Phone App" loading='lazy' />
           </div>
           <div className='flex flex-col gap-9 col-span-2'>
             <div>

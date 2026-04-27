@@ -1,14 +1,15 @@
 import { Vodafone } from "./sections/Vodafone";
 import { Mavi } from "./sections/Mavi";
 import { Hero } from "./sections/Hero";
+import { Vakifbank } from "./sections/Vakifbank";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-light">
       <Hero />
-      <Vodafone />
       <Mavi />
-      <footer className="bg-indigo-800 pb-10" />
+      <Vakifbank />
+      <Vodafone />
     </div>
   );
 }

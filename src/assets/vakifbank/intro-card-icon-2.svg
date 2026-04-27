@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="23.5" cy="22.5" r="12" stroke="black" stroke-width="3"/>
+<path d="M23.5 37.5C30.0765 37.5 35.5 43.0446 35.5 50C35.5 56.9554 30.0765 62.5 23.5 62.5C16.9235 62.5 11.5 56.9554 11.5 50C11.5 43.0446 16.9235 37.5 23.5 37.5Z" stroke="black" stroke-width="3"/>
+<circle cx="23.5" cy="77.5" r="12" stroke="black" stroke-width="3"/>
+<path d="M51 10.5C57.9554 10.5 63.5 15.9235 63.5 22.5C63.5 29.0765 57.9554 34.5 51 34.5C44.0446 34.5 38.5 29.0765 38.5 22.5C38.5 15.9235 44.0446 10.5 51 10.5Z" stroke="black" stroke-width="3"/>
+<circle cx="51" cy="50" r="12.5" stroke="black" stroke-width="3"/>
+<path d="M51 65.5C57.9554 65.5 63.5 70.9235 63.5 77.5C63.5 84.0765 57.9554 89.5 51 89.5C44.0446 89.5 38.5 84.0765 38.5 77.5C38.5 70.9235 44.0446 65.5 51 65.5Z" stroke="black" stroke-width="3"/>
+<circle cx="78.5" cy="22.5" r="12" stroke="black" stroke-width="3"/>
+<path d="M78.5 37.5C85.0765 37.5 90.5 43.0446 90.5 50C90.5 56.9554 85.0765 62.5 78.5 62.5C71.9235 62.5 66.5 56.9554 66.5 50C66.5 43.0446 71.9235 37.5 78.5 37.5Z" stroke="black" stroke-width="3"/>
+<circle cx="78.5" cy="77.5" r="12" stroke="black" stroke-width="3"/>
+<circle cx="36.5" cy="22.5" r="4.5" fill="black"/>
+<circle cx="36.5" cy="49.5" r="4.5" fill="black"/>
+<circle cx="36.5" cy="77.5" r="4.5" fill="black"/>
+<circle cx="65.5" cy="22.5" r="4.5" fill="black"/>
+<circle cx="65.5" cy="49.5" r="4.5" fill="black"/>
+<circle cx="65.5" cy="77.5" r="4.5" fill="black"/>
+</svg>
