@@ -100,7 +100,7 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#about">About Vodafone & Project scope's</a>
+                  <a className='hover:underline hover:text-blue-700' href="#about">About Vodafone & Project scope's</a>
                 </li>
               </ul>
             </div>
@@ -115,16 +115,16 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#funnel-analysis">Funnel Analysis</a>
+                  <a className='hover:underline hover:text-blue-700' href="#funnel-analysis">Funnel Analysis</a>
                 </li>
                 <li>
-                  <a href="#usability-test">Usability Test (10)</a>
+                  <a className='hover:underline hover:text-blue-700' href="#usability-test">Usability Test (10)</a>
                 </li>
                 <li>
-                  <a href="#workshop-affinity-map">Workshop with Upgrade squad & Affinity map</a>
+                  <a className='hover:underline hover:text-blue-700' href="#workshop-affinity-map">Workshop with Upgrade squad & Affinity map</a>
                 </li>
                 <li>
-                  <a href="#ideas-for-new-content">Ideas for new content</a>
+                  <a className='hover:underline hover:text-blue-700' href="#ideas-for-new-content">Ideas for new content</a>
                 </li>
               </ul>
             </div>
@@ -139,13 +139,13 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#final-design">Final design</a>
+                  <a className='hover:underline hover:text-blue-700' href="#final-design">Final design</a>
                 </li>
                 <li>
-                  <a href="#results">Results</a>
+                  <a className='hover:underline hover:text-blue-700' href="#results">Results</a>
                 </li>
                 <li>
-                  <a href="#key-learnings">Key learnings</a>
+                  <a className='hover:underline hover:text-blue-700' href="#key-learnings">Key learnings</a>
                 </li>
               </ul>
             </div>

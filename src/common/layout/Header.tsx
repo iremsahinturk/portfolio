@@ -41,7 +41,7 @@ export default function Header() {
         <div className="flex justify-between h-20 px-12 py-6 items-center">
           <div className="flex items-center gap-1.5">
             <img src={headerIcon} alt="Header Icon" className="h-3 w-3" />
-            <span className="text-lg tracking-wide">IREM SAHINTURK</span>
+            <Link className="text-lg tracking-wide" to="/work">IREM SAHINTURK</Link>
           </div>
           <nav className="flex items-center gap-7 text-lg">
             <Link 

@@ -25,6 +25,9 @@ export const Wireframes = () => {
       <div className='mx-auto max-w-7xl px-4 lg:px-6 mt-16'>
         <img src={wireframesNavigation} alt="Wireframes Navigation" className="w-full h-auto mt-12" loading="lazy" />
       </div>
+      <div className='mt-16'>
+        <img src={datasetDetailScreenshot} alt="Dataset Detail Screenshot" className="w-full h-auto mt-12" loading="lazy" />
+      </div>
 
       <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
         <h2 className='text-3xl font-medium mb-8'>
@@ -50,9 +53,6 @@ export const Wireframes = () => {
           datasetDetail3,
         ]} 
       />
-      <div className='mt-16'>
-        <img src={datasetDetailScreenshot} alt="Dataset Detail Screenshot" className="w-full h-auto mt-12" loading="lazy" />
-      </div>
 
       <div className='grid justify-center mx-auto max-w-3xl px-4 md:px-0 mt-16 text-sm leading-7 tracking-wide'>
         <h2 className='text-3xl font-medium mb-8'>

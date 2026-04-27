@@ -25,8 +25,8 @@ export const AboutMe = () => {
           </p>
           <br />
           <p>
-            Beyond digital design, I also explore materials through hands-on making—something I document and reflect on in this short video. 
-            <a className="text-theme-blue hover:underline" href="https://www.youtube.com/watch?v=ATy6-3vf4SI" target="_blank" rel="noopener noreferrer"> https://www.youtube.com/watch?v=ATy6-3vf4SI</a>
+            Beyond digital design, I also explore materials through hands-on making—something I document and reflect on 
+            <a className="text-theme-blue hover:underline" href="https://www.youtube.com/watch?v=ATy6-3vf4SI" target="_blank" rel="noopener noreferrer"> in this short video</a>.
           </p>
         </div>
         

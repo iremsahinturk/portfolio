@@ -60,7 +60,7 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#about">About Mavi & Project scope's</a>
+                  <a className='hover:underline hover:text-blue-700' href="#about">About Mavi & Project scope's</a>
                 </li>
               </ul>
             </div>
@@ -75,19 +75,19 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#staff-in-depth-interviews">Staff In-depth interviews (4)</a>
+                  <a className='hover:underline hover:text-blue-700' href="#staff-in-depth-interviews">Staff In-depth interviews (4)</a>
                 </li>
                 <li>
-                  <a href="#user-interviews">User interviews (6)</a>
+                  <a className='hover:underline hover:text-blue-700' href="#user-interviews">User interviews (6)</a>
                 </li>
                 <li>
-                  <a href="#brand-benchmarking">Brand benchmarking (162)</a>
+                  <a className='hover:underline hover:text-blue-700' href="#brand-benchmarking">Brand benchmarking (162)</a>
                 </li>
                 <li>
-                  <a href="#mental-model">Mental model</a>
+                  <a className='hover:underline hover:text-blue-700' href="#mental-model">Mental model</a>
                 </li>
                 <li>
-                  <a href="#trends-study">Trends study</a>
+                  <a className='hover:underline hover:text-blue-700' href="#trends-study">Trends study</a>
                 </li>
               </ul>
             </div>
@@ -102,13 +102,13 @@ export const Introduction = () => {
             <div className='mt-12 pl-3 text-sm'>
               <ul className='list-disc list-inside space-y-4 underline underline-offset-4'>
                 <li>
-                  <a href="#wireframes">High-fidelity wireframes</a>
+                  <a className='hover:underline hover:text-blue-700' href="#wireframes">High-fidelity wireframes</a>
                 </li>
                 <li>
-                  <a href="#final-design">Final design</a>
+                  <a className='hover:underline hover:text-blue-700' href="#final-design">Final design</a>
                 </li>
                 <li>
-                  <a href="#key-learnings">Key learnings</a>
+                  <a className='hover:underline hover:text-blue-700' href="#key-learnings">Key learnings</a>
                 </li>
 
               </ul>
