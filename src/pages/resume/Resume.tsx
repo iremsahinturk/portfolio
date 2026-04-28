@@ -1,6 +1,6 @@
 import downloadIcon from '@/assets/resume/download-icon.svg'
-import resume from '@/assets/resume/resume.svg'
-import resumePdf from '@/assets/resume/resume.pdf'
+import resume from '@/assets/resume/irem-sahinturk-resume.svg'
+import resumePdf from '@/assets/resume/irem-sahinturk-resume.pdf'
 
 export default function Resume() {
   return (
@@ -14,7 +14,7 @@ export default function Resume() {
         </div>
       </div>
       <div className='flex items-center my-10'>
-        <img src={resume} alt="Resume" className='mx-auto' />
+        <img src={resume} alt="Irem Sahinturk Resume" className='mx-auto' />
       </div>
     </section>
   )

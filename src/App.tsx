@@ -1,7 +1,7 @@
 import { lazy, useEffect } from 'react'
 import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router'
 import Header from './common/layout/Header'
-import PasswordProtection from './common/components/PasswordProtection'
+// import PasswordProtection from './common/components/PasswordProtection'
 
 const Work = lazy(() => import('@/pages/work/Work'))
 const About = lazy(() => import('@/pages/about/About.tsx'))
@@ -18,7 +18,7 @@ export default function App() {
   }, [pathname]);
 
   return (
-    <PasswordProtection>
+    // <PasswordProtection>
       <Routes>
         <Route element={<Header />}>
           <Route path="/work" element={<Outlet />}>
@@ -32,6 +32,6 @@ export default function App() {
           <Route path="*" element={<Navigate to="/work" replace />} />
         </Route>
       </Routes>
-    </PasswordProtection>
+    // </PasswordProtection>
   );
 }

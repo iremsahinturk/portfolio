@@ -23,6 +23,25 @@ export default function PasswordProtection({ children }: { children: React.React
   useEffect(() => {
     // Verify the stored token matches the expected password hash
     const verifyAuth = async () => {
+      // Check for hashedPassword in URL query params
+      const urlParams = new URLSearchParams(window.location.search)
+      const hashedPasswordFromUrl = urlParams.get('hp')
+      
+      if (hashedPasswordFromUrl && import.meta.env.VITE_APP_PASSWORD) {
+        const expectedToken = await hashPassword(import.meta.env.VITE_APP_PASSWORD)
+        if (hashedPasswordFromUrl === expectedToken) {
+          // Valid hash from URL, store it and authenticate
+          localStorage.setItem(STORAGE_KEY, hashedPasswordFromUrl)
+          setIsAuthenticated(true)
+          // Clean up URL by removing the query parameter
+          const newUrl = window.location.pathname + window.location.hash
+          window.history.replaceState({}, document.title, newUrl)
+          setIsLoading(false)
+          return
+        }
+      }
+
+      // Check stored token if no valid URL param
       const storedToken = localStorage.getItem(STORAGE_KEY)
       if (storedToken && import.meta.env.VITE_APP_PASSWORD) {
         const expectedToken = await hashPassword(import.meta.env.VITE_APP_PASSWORD)
